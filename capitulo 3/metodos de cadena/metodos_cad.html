@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize_cadenas.css">
+    <link rel="stylesheet" href="metodos_cad.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>funciones</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+    <main>
+        <div class="teoria">
+            <h1>metodos de cadena</h1>
+            <p>hay muchos metodos que nos facilitaran las cosas.</p>
+            <b>iniciamos:</b>
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "hola mundo"
+                    </p>
+                    cadena.startsWith("h") <br>
+                    resultado: true <br> 
+                    cadena.startsWith("a") <br>
+                    resultado: false <br>
+                    <p>
+                        esto nos servira para saber si una cadena inicia con un caracter en especifico
+                    </p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "mundo"
+                    </p>
+                    cadena.endsWith("o"); <br>
+                    resultado: true <br>
+                    cadena.endsWith("e"); <br>
+                    resultado: false <br> 
+                    <p>esto nos servira para saber si una cadena finaliza con algun caracter en especifico.</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>let cadena = "hola mundo XD";</p>
+                    cadena.includes("l") <br>
+                    resultado: true <br>
+                    cadena.includes("z") <br>
+                    resultado: false
+                    <p>esto nos servira para saber si una cadena contiene un caracter en especifico a diferencia de las dos primeras a este no le importara la posision.</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "hola mundo";
+                    </p>
+                    cadena.indexOf("a") <br>
+                    resultado: 3
+                    <p>esto nos mostrara la posision de un caracter en especifico</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "vivir es vida";
+                    </p>
+                    cadena.lastIndexOf("v") <br>
+                    resultado: 9 
+                    <p>esto nos servira para saber la ultima posision de un caracter en especifico.</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "123";
+                    </p>
+                    pseudocodigo: <br>
+                    variable.metodo ( parametro 1 longitud de cadena , parametro 2 cadena que queremos poner ); <br> <br>
+                    javaScript: <br>
+                    cadena.padStart(4,0) <br>
+                    resultado: 0123 
+                    <p>esto nos servira para rellenar una cadena al imicio</p>
+                </code> 
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "123";
+                    </p>
+                    pseudocodigo: <br>
+                    variable.metodo ( parametro 1 longitud , parametro 2 cadena que queremos poner al final ); <br> <br>
+                    javaScript: <br>
+                    cadena.padEnd(4,4) <br>
+                    resultado: "1234"
+                    <p>esto nos servira para rellenar una cadena al final.</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "hola";
+                    </p>
+                    cadena.repeat(3) <br>
+                    resultado: "hola","hola","hola"
+                    <p>
+                        esto nos servira para que el contenido de una cadena de texto se repita cuantas veces queramos
+                    </p>
+                </code>
+            </div>
+            
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "hola mundo";
+                    </p>
+                    cadena.split(" "); <br>
+                    resultado: ["hola","mundo"]
+                    <p>esto nos servira para separar una cadena y se convertira en un arreglo</p>
+                </code>
+            </div>
+            
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = "hola mundo";
+                    </p>
+                    pseudocodigo: <br>
+                    crear_variable = variable.metodo ( parametro 1 desde donde inicia , parametro 2 hasta donde finaliza y no cuenta el ultimo numero ); <br>
+                    <br>
+                    javaScript:
+
+                    <p>
+                        let subCadena = cadena.substring(5,10);
+                    </p>
+                    resultado: "mundo"
+                    <p>esto nos servira para crear una subcadena a diferencia de los otros metodos esto si necesita una variable de respaldo para que pueda guardar la nueva cadena de texto.</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        cadena.toUpperCase();
+                    </p>
+                    <p>
+                        cadena.toLoweCase();
+                    </p>
+                    <p>
+                        esto nos servira para convertir una cadena de texto a mayuscula o minuscula
+                    </p>
+                    <p>
+                        con "toUpperCase" convertiremos la cadena a mayuscula.  <br>
+                        con "toLoweCase" convertiremos una cadena a minuscula. 
+                    </p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = 123;
+                    </p>
+                    cadena.toString() <br>
+                    resultado: "123"
+                    <p>esto nos servira para convertir cualquier dato a una cadena de texto</p>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    <p>
+                        let cadena = " hola mundo ";
+                    </p>
+                    cadena.trim(); <br>
+                    resultado: "hola mundo"
+                    <p>
+                        esto nos servira para quitar los espacios al principio y al final de una cadena de texto.
+                    </p>
+                    <p>
+                        con "trimStart()" quitamos los espacios del principio de una cadena. <br>
+                        con "trimEnd()" quitamos el espacio al final de una cadena.
+                    </p>
+                </code>
+            </div>
+        </div>
+    </main>
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="metodos_cad.js"></script>
+</body>
+</html>

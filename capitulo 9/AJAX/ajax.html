@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="ajax.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>AJAX</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>AJAX</h1>
+        <p>
+            para esto abriremos un archivo txt y un servidor local usando: 
+            <a href="https://www.apachefriends.org/" target="blank">xampp</a> esto para 
+            poder enviar y recibir peticiones y ademas porque es compatible con una gran
+            cantidad de sistemas operativos.
+        </p>
+        <p>
+            una vez instalado abrimos las 2 primeras opciones y luego nuestros archivos donde
+            trabajaremos lo ponemos en una carpeta llamada "htdocs" puedes buscarlo en tu buscador
+            de tu sistema operativo.
+        </p>
+        <div class="code_content">
+            <code>
+                <p>
+                    javaScript:
+                </p>
+                sintaxis de objeto "XMLHttpRequest"; <br> <br>
+
+                const peticion = new XMLHttpRequest; <br> <br>
+
+                con "XMLHttpRequest" podemos enviar peticiones "GET" , "POST" , etc.
+            </code>
+        </div>
+        <div class="code_content">
+            <p>
+                archivo txt:
+            </p>
+            <p>
+                nombre del archivo txt "datos.txt":
+            </p>
+            <code>
+                { <br>
+                    <b>"musica": "fiesta pagana",</b> <br>
+                    <b>"genero": "rock"</b> <br>
+                }
+            </code>
+        </div>
+
+        <div class="code_content">
+            <h2>abrir archivo y metodo:</h2>
+            <p>
+                pseudocodigo:
+            </p>
+            <code>
+                const peticion = new XMLHttpRequest; <br> <br>
+                peticion.abrir("metodo","url archivo o sitio web"); <br>
+            </code>
+            <p>
+                javaScript;
+            </p>
+            <code>
+                const peticion = new XMLHttpRequest; <br> <br>
+                peticion.open("GET","datos.txt");
+            </code>
+            <p>
+                con "open" abriremos el archivo o url para poder enviar o recibir datos. 
+            </p>
+        </div>
+
+        <div class="code_content">
+            <h2>enviar datos:</h2>
+            <p>
+                pseudocodigo:
+            </p>
+            <code>
+                const peticion = new XMLHttpRequest; <br> <br>
+                peticion.abrir("metodo","url archivo o sitio web"); <br>
+                peticion.enviar()
+            </code>
+            <p>
+                javaScript:
+            </p>
+            <code>
+                const peticion = new XMLHttpRequest; <br> <br>
+                peticion.open("GET","datos.txt"); <br>
+                peticion.send()
+            </code>
+            <p>
+                con "send()" podemos enviar los datos.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <h2>metodos de ajax</h2>
+            <code>
+                const peticion = new XMLHttpRequest; <br>
+                    <b>peticion.addEventListener("readystatechange",()=>{</b> <br>
+                    <b>console.log(peticion.readyState);</b> <br>
+                    <b>console.log(peticion.response)</b> <br>
+                    <b>console.log(peticion.status)</b> <br>
+                }) <br>
+                peticion.open("GET","datos.txt") <br>
+                peticion.send() <br>
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    con "readystatechange" abriremos el evento para poder trabajar con los datos.
+                </p>
+            </code>
+        </div>
+        
+        <div class="code_content">
+            <code>
+                <p>
+                    con "readyState" veremos los estados.
+                </p>
+                estado 1: la solicitud se creo correctamente. <br>
+                estado 2: la solicitud se envio correctamente. <br>
+                estado 3: la solicitud se esta procesando. <br>
+                estado 4: todo esta listo y ya se puede usar el resultado.
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                con "response" mostraremos el resultado en este caso: <br>
+                { <br>
+                    <b>"musica": "fiesta pagana",</b> <br>
+                    <b>"genero": "rock"</b> <br>
+                }
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                con "status" veremos el estado del sitio un ejemplo claro 404 y asi.
+            </code>
+        </div>
+
+        <p>ejemplo</p>
+
+        <div class="code_content">
+            <h2>readystatechange</h2>
+            <code>
+                const peticion = new XMLHttpRequest <br>
+                peticion.addEventListener("readystatechange",()=>{ <br>
+                    if(peticion.readyState == 4 && <br>
+                        peticion.status == 200 <br>
+                        ){  <br>
+                            <b>console.log(peticion.response)</b> <br>
+                        } <br>
+                }) <br>
+                peticion.open("GET","datos.txt") <br>
+                peticion.send() 
+            </code>
+        </div>
+        <p>
+            como nos damos cuenta con "readyState" tendremos que hacer muuchas
+            validaciones pero se puede evitar con "load".
+        </p>
+
+        <div class="code_content">
+            <h2>load</h2>
+            <code>
+                const peticion = new XMLHttpRequest <br>
+                peticion.addEventListener("load",()=>{ <br>
+                    <b>console.log(peticion.response)</b> <br>
+                }) <br>
+                peticion.open("GET","datos.txt") <br>
+                peticion.send() 
+            </code>
+            <p>
+                nos mostrara el mismo resultado solo que nos evitamos las 
+                validaciones y es mas rapido.
+            </p>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="ajax.js"></script>
+</body>
+</html>

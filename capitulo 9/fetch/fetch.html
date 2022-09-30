@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fetch.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>fetch</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>fetch</h1>
+        <p>con "fetch" podemos trabajar de forma mas sensilla y con menos codigo que "ajax".</p>
+        <div class="code_content">
+            <p>
+                javaScript:
+            </p>
+            <code>
+                const peticion = fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>")
+                <p>
+                    dato curioso fetch viene por defecto con el metodo "GET". y son promesas 
+                    con datos encapsulados.
+                </p>
+            </code>
+        </div>
+        <div class="code_content">
+            <code>
+                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
+                .then(res=>console.log(res))
+                <p>
+                    aqui se puede ver que se muestra con datos encapsulados ya que usamos "then" para ver resultados.
+                </p>
+            </code>
+        </div>
+
+        <div class="code_content">
+            <p>
+                metodos:
+            </p>
+            <code>
+                text() <br>
+                json() <br>
+            </code>
+        </div>
+        <p>ejemplo text()</p>
+
+        <div class="code_content">
+            <code>
+                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
+                <b>.then(res=>res.text())</b> <br>
+                <b>.then(res=>console.log(res))</b> <br>
+            </code>
+            <p>
+                con "text" nos devolvera los datos en forma de texto por ello podemos usar el metodo 
+                "parse" para descerializar el objeto json. 
+            </p>
+            <code>
+                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
+                <b>.then(res=>res.text())</b> <br>
+                <b>.then(res=>console.log(JSON.parse(res)))</b>
+            </code>
+        </div>
+        
+        <p>ejemplo json()</p>
+        <div class="code_content">
+            <code>
+                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
+                <b>.then(res=>res.json())</b> <br>
+                <b>.then(res=>console.log(res))</b>
+            </code>
+            <p>con json() nos mostrara directamente el objeto json no es necesario usar "parse".</p> 
+        </div>
+
+        <p>
+            como sabemos fetch viene por defecto con el metodo "GET", pero 
+            si queremos poner otro metodo si es necesario poner otro parametro que seria 
+            un objeto.
+        </p>
+
+        <p>
+            metodos para fetch.
+        </p>
+        <div class="code_content">
+            <code>
+                method: "metodo",   esto sera para poner el metodo. <br>
+                body: "enviar",     esto sera para poner el contenido que queremos mandar. <br>
+                headers: "enviar"   esto sera para enviar los datos que queramos
+            </code>
+        </div>
+        <div class="code_content">
+            <code>
+                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>",{ <br>
+                    <b>method: "POST",</b> <br>
+                    body: JSON.stringify({ <br>
+                        <b>"musica": "molinos de viento",</b> <br>
+                        <b>"genero": "rock"</b> <br>
+                    }), <br>
+                    headers: {"Content-type" : "application/json"} <br>
+                }) <br>
+                .then(res=>res.json()) <br>
+                .then(res=>console.log(res))
+            </code>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="fetch.js"></script>
+</body>
+</html>

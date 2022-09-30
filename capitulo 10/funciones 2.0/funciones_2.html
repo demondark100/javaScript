@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="funciones_2.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>funciones 2.0</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>
+            funciones 2.0 
+        </h1>
+
+        <h2>
+            funcion flecha.
+        </h2>
+        <p>
+            podemos crear funciones sin necesidad del cuerpo "{}" solo cuando sea una sola expresion y solo funciona con las funciones flecha no con funciones clasicas.
+        </p>
+        <div class="code_content">
+            <h2>
+                error:
+            </h2>
+            <code>
+                const musica = () => {"riptide"} <br>
+                console.log(musica()) <br>
+                <p>
+                    esto nos retornara undefined.
+                </p>
+                function musica () "riptide"; <br>
+                console.log(musica())
+                <p>
+                    y aqui directamente nos dara error.
+                </p>
+            </code>
+        </div>
+
+        <div class="code_content">
+            <h2>
+                correcto:
+            </h2>
+            <div class="code_content">
+                <code>
+                    const musica = () => "riptide"; <br>
+                    console.log(musica())
+                </code>
+                <p>
+                    como ya supondran nos retornara "riptide".
+                </p>
+            </div>
+        </div>
+
+        <p>
+            los parentesis "()" son obsionales cuando solo es un parametro esto se puede con funciones flecha no con las funciones normales.
+        </p>
+
+        <div class="code_content">
+            <code>
+                const music = nombre =>{ <br>
+                    <b>console.log(nombre)</b> <br>
+                } <br>
+                music("Rain Over Me") <br> <br>
+            </code>
+            <code>
+                const music = nombre => "Rain Over Me" <br>
+                console.log(music())
+            </code>
+        </div>
+
+        <h2>
+            funcion flecha no recomendada en:
+        </h2>
+        <p>
+            las funciones flecha no son recomendadas como metodos o como constructores de un objeto.
+        </p>
+
+        <h2>
+            no sirve como metodo.
+        </h2>
+
+        <div class="code_content">
+            <h2>
+                error:
+            </h2>
+            <code>
+                const objeto = { <br>
+                    <b>musica: "A Sky Full of Stars",</b> <br>
+                    <b>artusta: "Coldplay",</b> <br>
+                    <b>mostrar: ()=>{</b> <br>
+                        <b>console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)</b> <br>
+                    <b>}</b> <br>
+                } <br>
+                objeto.mostrar()
+            </code>
+            <p>
+                esto nos mostrara "undefined"
+            </p>
+        </div>
+
+        <div class="code_content">
+            <h2>
+                correcto:
+            </h2>
+            <code>
+                const objeto = { <br>
+                    <b>musica: "A Sky Full of Stars",</b> <br>
+                    <b>artusta: "Coldplay",</b> <br>
+                    <b>mostrar: function(){</b> <br>
+                        <b>console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)</b> <br>
+                    <b>}</b> <br>
+                } <br>
+                objeto.mostrar()
+            </code>
+        </div>
+
+        <p>
+            no es recomendable la funcion flecha como metodo porque a la hora de trabajar con "this" la funcion flecha no reconoce al objeto si no que va a una escala superior.
+        </p>
+
+        <p>
+            por ejemplo:
+        </p>
+
+        <div class="code_content">
+            <code>
+                const objeto1 = { <br>
+                    <b>color: "verde",</b> <br>
+                    <b>mostrar: function (){</b> <br> 
+                        <b>console.log(`el color es ${this.color}`)</b> <br>
+                    <b>}</b> <br>
+                } <br>
+                objeto1.mostrar()
+            </code>
+            <p>
+                con la "function" a la hora de usar "this" se va hacia el metodo y no hay ningun problema osea que muestra lo que queremos que muestre.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                const objeto2 = { <br>
+                    <b>color: "verde",</b> <br>
+                    <b>mostrar: ()=>{</b> <br> 
+                        <b>console.log(`el color es ${this.color}`)</b> <br>
+                    <b>}</b> <br>
+                } <br>
+                window.color = "azul" <br>
+                objeto2.mostrar() <br>
+                //resultado: "el color es azul"
+            </code>
+            <p>
+                como hemos dicho con la funcion flecha accedemos al objeto que va a una escala mas arriba en este caso va hasta el objeto window.
+            </p>
+        </div>
+
+        <h2>
+            no sirve como constructor
+        </h2>
+
+        <div class="code_content">
+            <h2>
+                incorrecto:
+            </h2>
+            <code>
+                const constructor=(musica,artista)=>{ <br>
+                    <b>this.musica = musica,</b> <br>
+                    <b>this.artista = artista</b> <br>
+                } <br> 
+                const musica = new constructor("Mary On A Cross","Ghost") <br>
+                console.log(musica)
+            </code>
+            <p>
+                esto directamente nos mandara un error ya que las funciones flecha no se pueden usar como un constructor.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <h2>
+                correcto:
+            </h2>
+            <code>
+                function constructo(musica,artista){ <br>
+                    <b>this.musica = musica,</b> <br>
+                    <b>this.artista = artista</b> <br>
+                } <br>
+                const music = new constructo("Mary On A Cross","Ghost") <br>
+                console.log(music)
+            </code>
+            <p>
+                con las funciones clasicas si nos permite crear un constructor para un objeto.
+            </p>
+        </div>
+        
+    </div>
+</main>
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="funciones_2.js"></script>
+</body>
+</html>

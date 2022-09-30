@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize_atributos_i.css">
+    <link rel="stylesheet" href="atributos_i.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>atributos de inputs</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>atributos de inputs</h1>
+        <p>
+            a diferencia de los atributos de los elementos esto no necesita de "setAttribute" para poder modificar los atributos ahora se hace con "." es mas parecido a un objeto.
+        </p>
+        
+        <div class="code_content">
+            <code>
+                HTML: <br>
+                input class="a" type="text"> <br>
+                javaScript: <br>
+                const a = document.querySelector(".a"); <br>
+                a.placeholder = "nombre";
+            </code>
+            <p>
+                esto nos sirve para mostrar un texto en el input.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                HTML: <br>
+                input class="a" type="text"> <br>
+                javaScript: <br>
+                const a = document.querySelector(".a"); <br>
+                a.type = "number";
+            </code>
+            <p>
+                con "type" es para cambiar el tipo de input.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                HTML: <br>
+                input class="a" type="text"> <br>
+                javaScript: <br>
+                const a = document.querySelector(".a"); <br>
+                a.value = "Music";
+            </code>
+            <p>
+                con "value" podremos modificar el valor que lleva un input. 
+            </p>
+        </div>
+        <p>
+            hay muchos atributos mas...
+        </p>
+
+        <p>
+            por ultimo tenemos al atributos "style" , esto se aplica como atributo global osea que puedes ponerlo donde sea.
+        </p>
+
+        <div class="code_content">
+            <code>
+                HTML: <br>
+                input class="a" type="text"> <br>
+                javaScript: <br>
+                const a = document.querySelector(".a"); <br>
+                a.style.color = "#f00";
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                HTML: <br>
+            p class="a">hola /p> <br>
+            javaScript: <br>
+            const a = document.querySelector(".a"); <br>
+            a.style.color = "#f00";
+            </code>
+        </div>
+
+        <p>
+            "style" nos sirve para dar estilos como css pero desde "javaScript"
+        </p>
+    </div>
+</main>
+
+
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="atributos_i.js"></script>
+</body>
+</html>

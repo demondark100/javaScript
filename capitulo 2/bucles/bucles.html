@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize_bucles.css">
+    <link rel="stylesheet" href="bucles.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>bucles</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+    <main>
+        <div class="teoria">
+            <h1>bucles</h1>
+            <p>
+                con los bucles podremos recorrer arreglos o 
+                tambien hacer algo de una forma repetida.
+            </p>
+            <p>
+                con "++" ira incrementado un numero de 1 en 1.
+            </p>
+
+            <div class="code_content">
+                <code>
+                    bucle while: <br>
+                    pseudocodigo 1: <br>
+                    crear variable = valor; <br>
+                    bucle( condicional ) { <br>
+                        <b>variable++;</b> <br>
+                        <b>recorrer arreglo o hacer algo.</b> <br>
+                    } 
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code> 
+                    bucle for: <br>
+                    pseudocodigo 2: <br>
+                    bucle ( crear variable = valor ; condicional ; variable++ ) { <br>
+                        <b>recorrer arreglo o hacer algo.</b> <br>
+                    }
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    bicle in: <br>
+                    pseudocodigo 3: <br>
+                    resumen 1: <br>
+                    bucle ( recorrer bucle y mostrar posisiones ) { <br>
+                        <b>hacer algo.</b> <br>
+                    } <br>
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    bucle of: <br>
+                    pseudocodigo: <br>
+                    bucle ( recorrer bucle y mostrar el contenido ) { <br>
+                        <b>hacer algo.</b> <br>
+                    }
+                </code>
+            </div>
+
+            <p>
+                ahora con javaScript.
+            </p>
+
+            <div class="code_content">
+                <code>
+                    javaScript while: <br>
+                    let i = 0; <br>
+                    while(i < 5){ <br>
+                        <b>i++;</b> <br>
+                        <b>console.log("se ejecuto este bucle");</b> <br>
+                    }
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    javaScript for: <br>
+                    for(let i = 0; i < 5; i++){ <br>
+                        <b>console.log("se ejecuto el bloque for");</b> <br>
+                    }
+                </code>
+            </div>
+
+
+            <div class="code_content">
+                <code>
+                    javaScript bucle in: <br>
+                    let arreglo = [ <br>
+                        <b>"user1",</b> <br>
+                        <b>"user2",</b> <br>
+                        <b>"user3",</b> <br>
+                        <b>"user4"</b> <br>
+                    ]; <br>
+                    for(let arr in arreglo){ <br>
+                        <b>console.log(arr);</b> <br>
+                    }
+                </code>
+            </div>
+
+            <div class="code_content">
+                <code>
+                    javaScript bucle of: <br>
+                    let arreglo = [ <br>
+                        <b>"user1",</b> <br>
+                        <b>"user2",</b> <br>
+                        <b>"user3",</b> <br>
+                        <b>"user4"</b> <br>
+                        ]; <br>
+                        for(let arr of arreglo){ <br>   
+                            <b>console.log(arr);</b> <br>
+                        }
+                </code>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer_div">
+            <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+        </div>
+    </footer>
+    
+    
+    <script src="bucles.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize_arr.css">
+    <link rel="stylesheet" href="metodos_arr.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>funciones</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+<main>
+    <div class="teoria">
+        <h1>metodos de arreglos</h1>
+        <p>
+            los metodos de arreglos nos facilitaran las cosas.
+        </p>
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = ["manzana","pera","naranja"];
+                </p>
+                <p>
+                    let frutas2 = frutas.pop();
+                </p>
+                resultado frutas: ["manzana","pera"];
+                resultado frutas2: "naranja";
+                <p>
+                    esto nos servira para quitar el ultimo elemento de un arreglo.
+                </p>
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = ["manzana","pera","naranja"];
+                </p>
+                <p>
+                    let frutas2 = frutas.shift();
+                </p>
+                resultado frutas: ["pera","naranja"]; <br>
+                resultado frutas2: "manzana";
+            </code>
+            <p>
+                esto nos servira para quitar el primer elemento de un arreglo
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = ["manzana","naranja"];
+                </p>
+                frutas.push("pera"); <br>
+                resultado: [ <br>
+                <b>"manzana",</b> <br>
+                <b>"naranja",</b> <br>
+                <b>"pera"</b> <br>
+                ];
+            </code>
+            <p>
+                esto nos servira para agregar elementos al final de un arreglo
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = [ <br>
+                    <b>"naranja",</b> <br>
+                    <b>"pera"</b> <br>
+                    ];
+                </p>
+                frutas.unshift("manzana"); <br>
+                resultado: [ <br>
+                    <b>"manzana",</b> <br>
+                    <b>"naranja",</b> <br>
+                    <b>"pera"</b> <br>
+                ]
+            </code>
+            <p>
+                esto nos servira para agregar elementos al principio de un arreglo
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let abecedario = [ <br>
+                        <b>"a",</b> <br>
+                        <b>"b",</b> <br>
+                        <b>"c",</b> <br>
+                        <b>"d"</b> <br>
+                    ];
+                </p>
+                abecedario.reverse() <br>
+                resultado: [ <br>
+                    <b>"d",</b> <br>
+                    <b>"c",</b> <br>
+                    <b>"b",</b> <br>
+                    <b>"a"</b> <br>
+                ];
+            </code>
+            <p>esto nos servira para poner en reversa un arreglo</p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = [ <br>
+                    <b>"manzana",</b> <br>
+                    <b>"pera",</b> <br>
+                    <b>"naranja",</b> <br>
+                    <b>"sandia",</b> <br>
+                    <b>"mango"</b> <br>
+                    ];
+                </p>
+                <p>
+                    pseudocodigo: <br>
+                    crear_variable = variable.metodo ( <br>
+                    parametro 1 desde que posision inicia , <br>
+                    parametro 2 cuantos elementos quieres eliminar o remmplazar , <br> 
+                    paremtro 3 con que quieres reemplazar a ese elemento seleccionado )
+                </p>
+                <p>
+                    javaScript: <br>
+                    let frutas2 = frutas.splice(1,1,"fresa")
+                </p>
+                resultado frutas: [ <br>
+                    <b>"manzana",</b> <br>
+                    <b>"fresa",</b> <br>
+                    <b>"naranja",</b> <br>
+                    <b>"sandia",</b> <br>
+                    <b>"mango"</b> <br>
+                ]; <br>
+                resultado frutas2: "pera"
+            </code>
+            <p>
+                esto nos servira para reemplazar o eliminar un elemento desde la pssision que queramos.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let numeros = [5,4,3,8,7,3,0];
+                </p>
+                numeros.sort() <br>
+                resultado: [ <br>
+                    <b>0,</b> <br>
+                    <b>3,</b> <br>
+                    <b>3,</b> <br>
+                    <b>4,</b> <br>
+                    <b>5,</b> <br>
+                    <b>7,</b> <br>
+                    <b>8</b> <br>
+                ];
+            </code>
+            <p>
+                esto nos servira para ordenar los datos de un arreglo pueden ser numericos o alfabeticos.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    pseudocodigo: <br>
+                    crear_variable = variable.metodo ( <br>
+                    parametro 1 desde que posision iniciara , <br>
+                    parametro 2 hasta que posision recortaras , el conteo iniciara desde todo el arreglo y la ultima parte no la cortara )
+                </p>
+                <p>
+                    javaScript: <br>
+                    let frutas = [ <br>
+                        <b>"manzana",</b> <br>
+                        <b>"pera",</b> <br>
+                        <b>"naranja",</b> <br>
+                        <b>"mango",</b> <br>
+                        <b>"sandia",</b> <br>
+                        <b>"piña"</b> <br>
+                    ];
+                </p>
+                let frutas2 = frutas.slice(1,3); <br> <br>
+                resultado: [ <br>
+                    <b>"pera",</b> <br>
+                    <b>"naranja"</b> <br>
+                ];
+            </code>
+            <p>
+                esto nos servira para crear un subarreglo es como substring
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    let frutas = [ <br>
+                        <b>"manzana",</b> <br>
+                        <b>"naranja",</b> <br>
+                        <b>"pera",</b> <br>
+                        <b>"durazno",</b> <br>
+                        <b>"piña"</b> <br>
+                    ];
+                </p>
+                frutas.join(" - "); <br>
+                resultado = "manzana - naranja - pera - durazno - piña";
+            </code>
+            <p>
+                esto nos servira para convertir un arreglo en una cadena de texto y nos da la posibilidad de modificar con que queremos hacer el espacio
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                let frutas = [ <br>
+                    <b>"manzana",</b> <br>
+                    <b>"naranja",</b> <br>
+                    <b>"piña",</b> <br>
+<b>                 "mango"</b> <br>
+                    ]; <br>
+                    frutas.forEach(i=>{ <br>
+                        console.log(i); <br>
+                    });
+                </code>
+                <p>
+                    esto nos servira para recorrer un arreglo de una forma mas sensilla
+                </p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+
+
+<script src="metodos_arr.js"></script>
+</body>
+</html>

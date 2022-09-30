@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="e_interfaz.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>eventos interfaz</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+<main>
+    <div class="teoria">
+        <h1>eventos de la interfaz</h1>
+        <div class="code_content">
+            <code>
+                <p>
+                    HTML: 
+                </p>
+                p class="parrafo"> hola mundo /p>
+                <p>
+                    javaScript:
+                </p>
+                const parrafo = document.querySelector(".parrafo"); <br>
+                parrafo.addEventListener("error",()=>{<br>
+                    <b>alert("ha sucedido un error")</b><br>
+                });
+            </code>
+            <p>
+                con "error" el evento se activara cuando pase un error por ejemplo no cargo una imagen.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                window.addEventListener("load",()=>{<br>
+                    <b>alert("el sitio web a cargado correctamente.")</b><br>
+                });
+            </code>
+            <p>
+                con "load" el evento se activara cuando el elemento que indiquemos haya cargado por completo.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    javaScript: 
+                </p>
+                addEventListener("resize",()=>{<br>
+                    <b>alert("se cambio la resolucion")</b><br>
+                });
+            </code>
+            <p>
+                "resize" se ejecutara cuando la resolucion se cambie.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    javaScript:
+                </p>
+                addEventListener("scroll",()=>{<br>
+                    <b>alert("se escroleo el sitio web")</b><br>
+                });
+            </code>
+            <p>
+                "scroll" se ejecutara cuando se escrolee en el sitio web.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <code>
+                <p>
+                    HTML:
+                </p>    
+                input class="seleccion" type="text">
+                div class="mostrar"> /div>
+                <p>
+                    javaScript:
+                </p>
+                seleccion.addEventListener("select",(e)=>{ <br>
+                    <b>console.log(e.target.selectionStart)</b><br>
+                    <b>console.log(e.target.selectionEnd)</b><br>
+                })
+            </code>
+            <p>
+                con "select" podemos ver que selecciono el usuario de algun input. 
+            </p>
+            <p>
+                con "selectionStart" y "selectionEnd" podremos ver la posision del inicio y final de donde selecciono el usuario.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <p>
+                javaScript:
+            </p>
+            <code>
+                const seleccion = document.querySelector(".seleccion"); <br>
+                const mostrar = document.querySelector(".mostrar");<br>
+                <br>
+                seleccion.addEventListener("select",(e)=>{<br>
+                    <b>let posision_1 = e.target.selectionStart;</b><br>
+                    <b>let posision_2 = e.target.selectionEnd;</b><br>
+                    <b>let seleccionado = seleccion.value.substring(posision_1,posision_2);</b><br>
+                    <b>mostrar.textContent = seleccionado</b> <br>
+                })
+            </code>
+        </div>
+        <p>resultado</p>
+        <p>escribe algo y seleccionalo veras como es que en la pantalla aparecera lo que seleccionaste</p>
+
+        <div class="content_input">
+            <input class="seleccion" type="text" placeholder="escribir">
+            <div class="mostrar"></div>
+        </div>
+        
+    </div>
+</main>
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="e_interfaz.js"></script>
+</body>
+</html>

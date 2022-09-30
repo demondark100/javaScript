@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize_POD.css">
+    <link rel="stylesheet" href="POD.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>funciones</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+<main>
+    <div class="teoria">
+        <h1>programacion orientado a objetos</h1>
+
+        <div class="code_content">
+            <code>
+                pseudocodigo POD: <br>
+                clase nombre { <br>
+                    descripcion(objeto) { <br>
+                        <b>este.objeto = objeto,</b> <br>
+                        <b>este.objeto = objeto</b> <br>
+                    } <br>
+                }
+            </code>
+        </div>
+
+        <p>ahora lo haremos con javaScript real</p>
+        
+        <div class="code_content">
+            <code>
+                javaScript POD: <br>
+                class Puerta { <br>
+                constructor(color,material){ <br>
+                    <b>this.color = color;</b> <br>
+                    <b>this.material = material;</b> <br>
+                    } <br>
+                }
+            </code>
+        </div>
+
+        <p>para poder llamar a un objeto debemos hacer una variable de respaldo</p>
+
+        <div class="code_content">
+            <code>
+                pseudocodigo llamar: <br>
+                variable = nuevo objeto(poner la descripcion del objeto)
+            </code>
+        </div>
+
+        <p>ahora con sintaxis javaScript:</p>
+
+        <div class="code_content">
+            <code>
+                javaScript llamar: <br>
+                const puerta = new Puerta("negro","madera") 
+            </code>
+        </div>
+
+        <p>ahora podemos llamar al objeto puerta de esta manera</p>
+
+        <div class="code_content">
+            <code>
+                console.log(puerta)
+            </code>
+        </div>
+
+        <p>y si queremos algun dato en especifico podemos hacer esto:</p>
+        
+        <div class="code_content">
+            <code>
+                console.log(puerta.color); <br>
+                resultado: "negro"
+            </code>
+        </div>
+
+        <div class="code_content">
+            <code>
+                console.log(puerta.materia); <br>
+                resultado: "madera"
+            </code>
+        </div>
+
+        <p>luego tenemos a los metodos que son igual que las funciones solo que al estar dentro de un objeto se le denomina como metodo.</p>
+
+        <div class="code_content">
+            <code>
+                pseudocodigo metodo: <br>
+                class Puerta { <br>
+                    constructor(color,material){ <br>
+                        <b>this.color = color;</b> <br>
+                        <b>this.material = material;</b> <br>
+                        } <br>
+                        nombre(parametros){ <br>
+                            <b>hacer algo</b> <br>
+                        } <br>
+                    }
+            </code>
+        </div>
+
+        <p>ahora con javaScript real:</p>
+
+        <div class="code_content">
+            <p>javaScript metodo:</p>
+            <code>
+                class Puerta { <br>
+                    constructor(color,material){ <br>
+                        <b>this.color = color;</b> <br>
+                        <b>this.material = material;</b> <br>
+                        } <br>
+                        describir(){ <br>
+                            <b>console.log(`la puerta es de color ${this.color} y esta hecho de ${this.material}`)</b> <br>
+                        } <br>
+                    }
+            </code>
+        </div>
+
+        <p>para llamar a un metodo es igual a una funcion pero debemos asignarlo a un objeto.</p>
+
+        <p>pseudocodigo</p>
+        <div class="code_content">
+            <code>
+                pseudocodigo llamar: <br>
+                objeto.metodo()
+            </code>
+        </div>
+
+        <p>ahora con javaScript:</p>
+
+        <div class="code_content">
+            <code>
+                javaScript llamar: <br>
+                puerta.describir(); <br>
+                resultado: "la puerta es de color negro y esta hecho de madera"
+            </code>
+        </div>
+
+        <p>de esta manera llamamos a un metodo recuerda siempre debe de ir acompañado de un objeto previamente creado</p>
+
+        <p>erencia</p>
+
+        <p>pseudocodigo</p>
+        <div class="code_content">
+            <code>
+                pseudocodigo erencia: <br>
+                clase objeto eredar objeto anterior { <br>
+                    descripcion(eredar objeto anterior y agregar cosas nuevas){ <br>
+                        <b>erencia(cosas que eredara),</b> <br>
+                        <b>hacer algo</b> <br>
+                    } <br>
+                }
+            </code>
+        </div>
+        
+        <b>ahora con javaScript:</b>ç
+        <div class="code_content">
+            <code>
+                javaScript erencia: <br>
+                class ventana extends Puerta { <br>
+                    constructor(color,material,forma){ <br>
+                        <b>super(color,material),</b> <br>
+                        <b>this.forma = forma</b> <br>
+                    } <br>
+                }
+            </code>
+        </div>
+
+
+        <p>metodos estaticos</p>
+        <b>pseudocodigo</b>
+        <div class="code_content">
+            <code>
+                pseudocodigo estatico: <br>
+                class objeto{ <br>
+                    constructor(color){<br>
+                        <b>this.color = color</b> <br>
+                    } <br>
+                metodo estatico descripcion(){ <br>
+                    <b>hacer algo</b> <br>
+                } <br>
+                }
+            </code>
+        </div>
+
+        <p>ahora con javaScript:</p>
+
+        <div class="code_content">
+            <code>
+                javaScript estatico: <br>
+                class Objeto{ <br>
+                    constructor(color){<br>
+                        <b>this.color = color</b> <br>
+                    } <br>
+                    static describir(){ <br>
+                        <b>console.log("este es un objeto de color verde")</b> <br>
+                    } <br>
+                } <br>
+                Objeto.describir()
+            </code>
+        </div>
+
+        <p>metodos accesores</p>
+
+        <p>pseudocodigo:</p>
+        <div class="code_content">
+            <code>  
+                pseudocodigo accesores: <br>
+                class objeto { <br>
+                    constructor(material){ <br>
+                        <b>this.material = material</b> <br>
+                    } <br>
+                    cambiar nombre(parametro){ <br>
+                        <b>this.material = parametro</b> <br>
+                    } <br>
+                    acceder nombre(){ <br>
+                        <b>retornar this.material</b> <br>
+                    } <br>
+                }  
+            </code>
+        </div>
+
+        <p>ahora con javaScript:</p>
+
+        <div class="code_content">
+            <code>
+                javaScript accesores: <br>
+                class Objeto{ <br>
+                    constructor(forma,material){ <br>
+                        <b>this.forma = forma</b> <br>
+                        <b>this.material = material</b> <br>
+                    } <br>
+                    set cambio(material) { <br>
+                        <b>this.material = material</b> <br> 
+                    } <br>
+                    get acceder(){ <br>
+                        <b>return this.material</b>  <br>
+                    } <br>
+                } <br>
+                const pared = new Objeto("cuadrada","madera")
+            </code>
+        </div>
+
+        <p>llamaremos a los metodos accesores</p>
+
+        <p>pseudocodigo</p>
+        <div class="code_content">
+            <code>
+                pseudocodigo llamar: <br>
+                objeto.metodo = "nuevo valor"; <br>
+                console.log(objeto.metodo)
+            </code>
+        </div>
+
+        <p>ahora con javaScript</p>
+        <div class="code_content">
+            <code>
+                javaScript llamar: <br>
+                pered.cambio = "hierro"; <br>
+                console.log(pared.acceder)
+            </code>
+        </div>
+
+
+        <p>ahora veremos todo lo aprendido:</p>
+        <div class="code_content">
+            <code>
+            class Objeto { <br>
+                constructor(color,material){ <br>
+                <b>this.color = color</b> <br>
+                <b>this.material = material</b> <br>
+                } <br>
+            } <br>
+            class Mesa extends Objeto{<br>
+                    constructor(material,forma){<br>
+                    <b>super(material)</b><br>
+                    <b>this.forma = forma</b><br>
+                }<br>
+                static algo(){<br>
+                    <b>console.log("xd")</b><br>
+                }<br>
+                set cambio(objeto){<br>
+                    <b>this.forma = objeto</b><br>
+                }<br>
+                get acceder(){<br>
+                    <b>return this.forma</b><br>
+                }<br>
+            }<br>
+            Mesa.algo()<br>
+            const mesa = new Mesa("madera","rectangular")<br>
+            mesa.cambio = "cuadrada" <br>
+            console.log(mesa.acceder)<br>
+            </code>
+        </div>
+    </div>
+</main>
+
+
+
+    <footer>
+        <div class="footer_div">
+            <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+        </div>
+    </footer>
+    
+    
+    <script src="POD.js"></script>
+</body>
+</html>

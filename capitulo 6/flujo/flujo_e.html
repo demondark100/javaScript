@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="flujo_e.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>eventos flujo</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>flujo de eventos</h1>
+        <p>con esto veremos cual es el flujo de los eventos.</p>
+        <div class="code_content">
+            <code>
+                <p>HTML:</p>
+                div class="content_1"> <br>
+                    <b>div class="content_2"></b> <br>
+                        <b>button class="boton"> click /button></b> <br>
+                    <b>/div></b><br>
+                /div> <br>
+                <br>
+                <p>css:</p>
+                .content_1{ <br>
+                    <b>width: 250px;</b><br>
+                    <b>height: 110px;</b><br>
+                    <b>background-color: #0f0;</b><br>
+                }<br>
+                .content_2{<br>
+                    <b>background-color: #f00;</b><br>
+                    <b>width: 150px;</b><br>
+                    <b>height: 85px;</b><br>
+                    <b>margin: auto;</b><br>
+                }<br>
+                .boton{<br>
+                    <b>background-color: #00f;</b><br>
+                    <b>color: #fff;</b><br>
+                }<br>
+                <p>javaScript:</p>
+                const content_1 = document.querySelector(".content_1");<br>
+                const content_2 = document.querySelector(".content_2");<br>
+                const boton = document.querySelector(".boton");<br>
+                content_1.addEventListener("click",()=>{<br>
+                    <b>alert("content_1");</b><br>
+                });<br>
+                content_2.addEventListener("click",()=>{<br>
+                    <b>alert("content_2");</b><br>
+                });<br>
+                boton.addEventListener("click",()=>{<br>
+                    <b>alert("click");</b><br>
+                });<br>
+            </code>
+        </div>
+
+        <p>resultado</p>
+        <p>para ver resultados hacer click en "click"</p>
+
+        <div class="content_1">
+            <div class="content_2">
+                <button class="boton">click</button>
+            </div>
+        </div>
+
+
+        <div class="code_content">
+            <p>javaScript:</p>
+            <code>
+                const content_1 = document.querySelector(".content_1");<br>
+                const content_2 = document.querySelector(".content_2");<br>
+                const boton = document.querySelector(".boton");<br>
+                content_1.addEventListener("click",()=>{<br>
+                    <b>alert("content_1");</b><br>
+                });<br>
+                content_2.addEventListener("click",()=>{<br>
+                    <b>alert("content_2");</b><br>
+                },true);<br>
+                boton.addEventListener("click",()=>{<br>
+                    <b>alert("click");</b><br>
+                });<br>
+                <p>
+                    con "true" manejaremos el flujo de los eventos en este caso "content_2" se ejecutara primero
+                </p>
+            </code>
+        </div>
+
+        <p>
+            resultado:
+        </p>
+        <p>para ver resultados hacer click en "click"</p>
+        <div class="content_3">
+            <div class="content_4">
+                <button class="boton_2">click</button>
+            </div>
+        </div>
+
+
+        <div class="code_content">
+            <p>javaScript:</p>
+            <code>
+                const content_1 = document.querySelector(".content_1");<br>
+                const content_2 = document.querySelector(".content_2");<br>
+                const boton = document.querySelector(".boton");<br>
+                content_1.addEventListener("click",()=>{<br>
+                    <b>alert("content_1");</b><br>
+                });<br>
+                content_2.addEventListener("click",()=>{<br>
+                    <b>alert("content_2");</b><br>
+                });<br>
+                boton.addEventListener("click",(e)=>{<br>
+                    <b>alert("click");</b><br>
+                    <b>e.stopPropagation();</b> <br>
+                });<br>
+            </code>
+            <p>
+                con "stopPropagation()" vamos a detener la propagacion de los eventos.
+            </p>
+        </div>
+        <p>resultado:</p>
+        <p>para ver resultados hacer click en "click"</p>
+        <div class="content_5">
+            <div class="content_6">
+                <button class="boton_3">click</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="flujo_e.js"></script>
+</body>
+</html>

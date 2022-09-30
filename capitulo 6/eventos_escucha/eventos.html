@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="eventos.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <title>eventos escucha</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>eventos de escucha</h1>
+        <div class="code_content">
+            HTML:  <br>
+            button class="boton"> saludar /button>
+        </div>
+
+        <div class="code_content">
+            <p>pseudocodigo: 1:</p>
+            <code> 
+                elementoHTML.metodoEscucha("tipo de evento",()=>{ <br>
+                    <b>alert("hola")</b> <br>
+                })
+            </code>
+        </div>
+
+        <div class="code_content">
+            <p>pseudocodigo 2:</p>
+            <code>
+                elementoHTML.metodoEscucha("tipo de evento",funcionEvento); <br>
+                funcion funcionEvento(){ <br>
+                    <b>alert("hola")</b> <br>
+                    <b>elementoHTML.removerEvento("tipo de evento",funcionEvento)</b> <br>
+                }
+            </code>
+        </div>
+
+        <div class="code_content">
+            <p>
+                javaScript_1:
+            </p>
+            <code>
+                const boton = document.querySelector(".boton"); <br>
+                boton.addEventListener("click",()=>{ <br>
+                    <b>alert("hola")</b> <br>
+                })
+            </code>
+            <p>
+                esto nos servira para hacer un evento de escucha sirve para cualquier tipo de elemento.
+            </p>
+        </div>
+
+        <div class="code_content">
+            <p>javaScript_2:</p>
+            <code>
+                const boton = document.querySelector(".boton"); <br>
+                boton.addEventListener("click",saludo)
+                function saludo(){ <br>
+                    <b>alert("hola");</b> <br>
+                    <b>boton.removeEventListener("click",saludo)</b> <br>
+                }
+            </code>
+            <p>
+                de esta manera podemos remover un elemento una vez se haya ejecutado.
+            </p>
+        </div>
+    </div>
+</main>
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="eventos.js"></script>
+</body>
+</html>
