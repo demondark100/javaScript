@@ -7,4 +7,3 @@ menu.addEventListener("click",()=>{
     let main = document.querySelector("main")
     main.classList.toggle("mover_content")
 })
-

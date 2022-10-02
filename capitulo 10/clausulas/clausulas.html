@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="clausulas.css">
+    <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Clausulas</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_content">
+            <div class="logo_container">
+                <img class="img_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript"><b class="text_logo">cript</b>
+            </div>
+            <div class="nav_container">
+                <i class="fa-solid fa-bars menu"></i>
+            </div>    
+        </div>
+        <div class="nav_content">
+            <nav class="header_nav">
+                <ul class="menu_nav">
+                    <li class="li_nav li_nav-1"><a class="redirecciom_1" target="_blank" href="https://www.facebook.com/shadowkillerxe">contactame</a></li>
+                    <li class="li_nav li_nav-1"><a class="redirecciom_2" href="https://github.com/demondark100" target="_blank">github</a></li>
+                    <li class="li_nav li_nav-"><a class="redirecciom_3" href="https://codepen.io/your-work" target="_blank">proyectos</a></li>
+                    <li class="li_nav li_nav-4"><a class="redirecciom_4" target="_blank" href="../../javaScript index.html">inicio</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+
+
+
+
+<main>
+    <div class="teoria">
+        <h1>clausulas</h1>
+        <p>
+            las clausulas son funciones que retornan otras funciones.
+        </p>
+        <div class="code_content">
+            <code>
+                const saludar = (nombre) =>{ <br>
+                    return function(){ <br>
+                        <b>console.log(`hola ${nombre}`)</b> <br>
+                    } <br>
+                } <br>
+                let saludo = saludar("una persona") <br>
+                addEventListener("load",saludo)
+            </code>
+        </div>
+
+        <p>
+            ejemplo clausula.
+        </p>
+
+        <h2>sin clausula</h2>
+        <div class="code_content">
+            <code>
+                <p>html:</p>
+                div class="content"> <br>
+                    <b>button class="t10 boton_1">10px /button></b> <br>
+                    <b>button class="t15 boton_1">15px /button></b> <br>
+                    <b>button class="t20 boton_1">20px /button></b> <br>
+                    div class="texto"> <br>
+                        <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis</b> <br>
+                        <b>libero repellendus et esse suscipit veritatis iure rem sed eum fuga</b> <br>
+                        <b>quo odit ad necessitatibus voluptas, similique reiciendis</b> <br> 
+                        <b>recusandae? Laboriosam, eveniet!</b> <br>
+                    /div> <br>
+                /div>
+                <p>
+                    javaScript:
+                </p>
+                <code>
+                    const cambiarTamaño = tamaño =>{ <br>
+                    <b>document.querySelector(".texto").style.fontSize = `${tamaño}px`</b> <br>
+                    //esta funcion recibe un parametro para cambiar el tamaño de un texto. <br>
+                    } <br>
+                    document.querySelector(".t10").addEventListener("click",()=>cambiarTamaño(10)); <br>
+                    document.querySelector(".t15").addEventListener("click",()=>cambiarTamaño(15)); <br>
+                    document.querySelector(".t20").addEventListener("click",()=>cambiarTamaño(20)); 
+                </code>
+            </code>
+        </div>
+        <h2>con clausula</h2>
+        <div class="code_content">
+            <code>
+                <p>html:</p>
+                div class="content"> <br>
+                    <b>button class="t10 boton_1">10px /button></b> <br>
+                    <b>button class="t15 boton_1">15px /button></b> <br>
+                    <b>button class="t20 boton_1">20px /button></b> <br>
+                    div class="texto"> <br>
+                        <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis</b> <br>
+                        <b>libero repellendus et esse suscipit veritatis iure rem sed eum fuga</b> <br>
+                        <b>quo odit ad necessitatibus voluptas, similique reiciendis</b> <br> 
+                        <b>recusandae? Laboriosam, eveniet!</b> <br>
+                    /div> <br>
+                /div>
+                <p>
+                    javaScript:
+                </p>
+                const cambiarTamaño = tamaño =>{ <br>
+                    return ()=>{ <br>
+                        <b>document.querySelector(".texto").style.fontSize = `${tamaño}px`</b> <br>
+                    } <br>
+                    //esta funcion recibe un parametro para cambiar el tamaño de un texto. <br>
+                } <br>
+                let t10 = cambiarTamaño(10); <br>
+                let t15 = cambiarTamaño(15); <br>
+                let t20 = cambiarTamaño(20); <br>
+                    document.querySelector(".t10").addEventListener("click",t10); <br>
+                    document.querySelector(".t15").addEventListener("click",t15); <br>
+                    document.querySelector(".t20").addEventListener("click",t20); 
+            </code>
+        </div>
+        <p>
+            el resultado de ambos codigos sera el mismo.
+        </p>
+        <div class="content">
+            <button class="t10 boton_1">10px</button>
+            <button class="t15 boton_1">15px</button>
+            <button class="t20 boton_1">20px</button>
+            <div class="texto">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero repellendus et esse suscipit veritatis iure rem sed eum fuga quo odit ad necessitatibus voluptas, similique reiciendis recusandae? Laboriosam, eveniet!
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<footer>
+    <div class="footer_div">
+        <p class="footer_text_1">hecho por: <a class="footer_text_2" href="#">@el_tio_dan</a></p>
+    </div>
+</footer>
+
+
+<script src="clausulas.js"></script>
+</body>
+</html>

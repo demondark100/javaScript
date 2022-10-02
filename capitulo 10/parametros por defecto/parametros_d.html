@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="capitulo_10.css">
+    <link rel="stylesheet" href="parametros_d.css">
     <script src="https://kit.fontawesome.com/7e204a84d0.js" crossorigin="anonymous"></script>
-    <title>capitulo 10</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>parametros por defecto</title>
 </head>
 <body>
 
@@ -35,21 +36,27 @@
 
 
 
-    <main>
-        <div class="capitulo_1">
-            <a href="prototipos/prototipos.html">prototipos</a>
-            <a href="caracteristicas_p/caracteristicas_p.html">caracteristicas de prototipos</a>
-            <a href="Strict Mode/Strict_Mode.html">Strict Mode</a>
-            <a href="funciones 2.0/funciones_2.html">segunda parte funciones</a>
-            <a href="This contextual/This_contextual.html">This contextual</a>
-            <a href="Recursividad/Recursividad.html">Recursividad</a>ç
-            <a href="clausulas/clausulas.html">clausulas</a>
-            <a href="parametros por defecto/parametros_d.html">parametros por defecto</a>
-            <a href="parametro rest/parametro_rest.html">parametro rest</a>
-            <a href="destructuracion/destructuracion.html">destructuracion</a>
+<main>
+    <div class="teoria">
+        <h1>
+            parametros por defecto
+        </h1>
+        <p>
+            esto nos sirve para poner un parametro por defecto en una funcion por ejemplo.
+        </p>
+        <div class="code_content">
+            <code>
+                const sumar = (a = 0 , b = 0) =>{ <br>
+                    <b>return a + b;</b> <br>
+                } <br>
+                console.log(sumar(10,5))
+            </code>
         </div>
-    </main>
-
+        <p>
+            si la persona/usuario no pasa ningun parametro el valor de la suma sera de 0 ya que los pusimos como parametro de defecto.
+        </p>
+    </div>
+</main>
 
 
 
@@ -61,7 +68,6 @@
 </footer>
 
 
-
-<script src="capitulo_10.js"></script>
+<script src="parametros_d.js"></script>
 </body>
 </html>
