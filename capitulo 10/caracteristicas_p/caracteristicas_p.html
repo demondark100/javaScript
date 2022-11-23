@@ -44,20 +44,24 @@
         <div class="code_content">
             <h2>cadena</h2>
             <code>
-                let cadena = "hola mundo"; <br>
-                console.log(cadena.__proto__)
+<textarea readonly class="codificacion">
+let cadena = "hola mundo";
+console.log(cadena.__proto__)
+</textarea>
             </code>
         </div>
 
         <div class="code_content">
             <h2>arreglo</h2>
             <code>
-                let arreglo = [ <br>
-                    <b>"number",</b> <br>
-                    <b>55,</b> <br>
-                    <b>false</b> <br>
-                    ]; <br>
-                console.log(arreglo)
+<textarea readonly class="codificacion">
+let arreglo = [ 
+    "number",
+    55,
+    false
+]; 
+console.log(arreglo)
+</textarea>
             </code>
             <p>
                 la unica propiedad de el arreglo es "length", las demas propiedades es lo que eredara del prototipo.
@@ -67,15 +71,17 @@
         <div class="code_content">
             <h2>objeto</h2>
             <code>
-                class Objeto { <br>
-                    <b>constructor(){}</b> <br>
-                    <b>saludar(){</b> <br>
-                        <b>console.log("hola")</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                
-                const objeto = new Objeto() <br>
-                console.log(objeto.__proto__.__proto__) <br>
+<textarea readonly class="codificacion">
+class Objeto { 
+    constructor(){}
+    saludar(){
+        console.log("hola")
+    }
+} 
+    
+const objeto = new Objeto() 
+console.log(objeto.__proto__.__proto__)              
+</textarea>
             </code>
             <p>
                 //"__proto__" es la erencia del "prototype" solamente que lo estamos modificando. 
@@ -88,19 +94,21 @@
 
         <div class="code_content">
             <code>
-                class Objeto { <br>
-                    <b>constructor(){}</b> <br>
-                    <b>saludar(){</b> <br>
-                        <b>console.log("hola")</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                
-                const objeto = new Objeto() <br>
-                objeto.saludar = () =>{ <br>
-                    <b>console.log("hola desde afuera")</b> <br>
-                } <br>
-                objeto.saludar() <br>
-                // resultado: "hola desde afuera"
+<textarea readonly class="codificacion">
+class Objeto { 
+    constructor(){}
+    saludar(){
+        console.log("hola")
+    }
+} 
+    
+const objeto = new Objeto() 
+objeto.saludar = () =>{ 
+    console.log("hola desde afuera")
+} 
+objeto.saludar() 
+// resultado: "hola desde afuera"        
+</textarea>
             </code>
             <p>
                 esto pasa porque se ejecuta primero la parte de adentro y luego los metodos de afuera , no estamos modificando el prototipo solo estamos agregando.
@@ -109,17 +117,19 @@
 
         <div class="code_content">
             <code>
-                class Objeto { <br>
-                    <b>constructor(){}</b> <br>
-                        <b>saludar(){</b> <br>
-                        <b>console.log("hola")</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                const objeto = new Objeto; <br>
-                <b>objeto.__proto__.saludar = ()=>{</b>
-                    <b>console.log("hola desde afuera")</b> <br>
-                } <br>
-                console.log(objeto)
+<textarea readonly class="codificacion">
+class Objeto { 
+    constructor(){}
+        saludar(){
+        console.log("hola")
+    } 
+} 
+const objeto = new Objeto; 
+objeto.__proto__.saludar = ()=>{
+    console.log("hola desde afuera")
+} 
+console.log(objeto)         
+</textarea>
             </code>
             <p>
                 //aqui si estamos modificando el prototipo del metodo "saludar".
@@ -128,17 +138,19 @@
 
         <div class="code_content">
             <code>
-                <h2>objeto</h2>
-                    class Objeto { <br>
-                        <b>constructor(){}</b> <br>
-                            <b>saludar(){</b> <br>
-                            <b>console.log("hola")</b> <br>
-                        <b>}</b> <br>
-                    } <br>
-                    const objeto = new Objeto; <br> <br>
-                    let arr = []; <br>
-                    arr.__proto__ = objeto <br>
-                    arr.saludar() <br>
+<textarea readonly class="codificacion">
+//objeto
+class Objeto { 
+        constructor(){}
+        saludar(){
+        console.log("hola")
+    } 
+} 
+const objeto = new Objeto;
+let arr = []; 
+arr.__proto__ = objeto 
+arr.saludar()              
+</textarea>
             </code>
             <p>
                 //con esto estamos eredando un prototipo al arreglo.

@@ -42,21 +42,30 @@
         <h1>fetch</h1>
         <p>con "fetch" podemos trabajar de forma mas sensilla y con menos codigo que "ajax".</p>
         <div class="code_content">
+            <p>link necesario</p>
+            <a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>
+        </div>
+        <div class="code_content">
             <p>
                 javaScript:
             </p>
             <code>
-                const peticion = fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>")
+<textarea readonly class="codificacion">
+const peticion = fetch("https://reqres.in/api/users/2")                        
+</textarea>
                 <p>
                     dato curioso fetch viene por defecto con el metodo "GET". y son promesas 
                     con datos encapsulados.
                 </p>
             </code>
         </div>
+
         <div class="code_content">
             <code>
-                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
-                .then(res=>console.log(res))
+<textarea readonly class="codificacion">
+fetch("https://reqres.in/api/users/2")
+.then(res=>console.log(res))                        
+</textarea>
                 <p>
                     aqui se puede ver que se muestra con datos encapsulados ya que usamos "then" para ver resultados.
                 </p>
@@ -68,35 +77,44 @@
                 metodos:
             </p>
             <code>
-                text() <br>
-                json() <br>
+<textarea readonly class="codificacion">
+text():
+json():              
+</textarea>
             </code>
         </div>
+        
         <p>ejemplo text()</p>
 
         <div class="code_content">
             <code>
-                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
-                <b>.then(res=>res.text())</b> <br>
-                <b>.then(res=>console.log(res))</b> <br>
+<textarea readonly class="codificacion">
+fetch("https://reqres.in/api/users/2")
+    .then(res=>res.text())
+    .then(res=>console.log(res))
+</textarea>
             </code>
             <p>
                 con "text" nos devolvera los datos en forma de texto por ello podemos usar el metodo 
                 "parse" para descerializar el objeto json. 
             </p>
             <code>
-                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
-                <b>.then(res=>res.text())</b> <br>
-                <b>.then(res=>console.log(JSON.parse(res)))</b>
+<textarea readonly class="codificacion">
+fetch("https://reqres.in/api/users/2")
+    .then(res=>res.text())
+    .then(res=>console.log(JSON.parse(res)))             
+</textarea>
             </code>
         </div>
         
         <p>ejemplo json()</p>
         <div class="code_content">
             <code>
-                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
-                <b>.then(res=>res.json())</b> <br>
-                <b>.then(res=>console.log(res))</b>
+<textarea readonly class="codificacion">
+fetch("https://reqres.in/api/users/2") 
+    .then(res=>res.json())
+    .then(res=>console.log(res))
+</textarea>
             </code>
             <p>con json() nos mostrara directamente el objeto json no es necesario usar "parse".</p> 
         </div>
@@ -112,29 +130,31 @@
         </p>
         <div class="code_content">
             <code>
-                method: "metodo",   esto sera para poner el metodo. <br>
-                body: "enviar",     esto sera para poner el contenido que queremos mandar. <br>
-                headers: "enviar"   esto sera para enviar los datos que queramos
+<textarea readonly class="codificacion">
+method: "metodo",   esto sera para poner el metodo. 
+body: "enviar",     esto sera para poner el contenido que queremos mandar. 
+headers: "enviar"   esto sera para enviar los datos que queramos                        
+</textarea>
             </code>
         </div>
         <div class="code_content">
             <code>
-                fetch("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>",{ <br>
-                    <b>method: "POST",</b> <br>
-                    body: JSON.stringify({ <br>
-                        <b>"musica": "molinos de viento",</b> <br>
-                        <b>"genero": "rock"</b> <br>
-                    }), <br>
-                    headers: {"Content-type" : "application/json"} <br>
-                }) <br>
-                .then(res=>res.json()) <br>
-                .then(res=>console.log(res))
+<textarea readonly class="codificacion">
+fetch("https://reqres.in/api/users/2",{ 
+    method: "POST",
+        body: JSON.stringify({ 
+        "musica": "molinos de viento",
+        "genero": "rock"
+    }), 
+    headers: {"Content-type" : "application/json"} 
+}) 
+    .then(res=>res.json()) 
+    .then(res=>console.log(res))             
+</textarea>
             </code>
         </div>
     </div>
 </main>
-
-
 
 
 

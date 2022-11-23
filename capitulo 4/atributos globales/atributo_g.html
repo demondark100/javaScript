@@ -40,11 +40,15 @@
         <p>estos atributos se pueden aplicar a todos los elementos.</p>
         <div class="code_content">
             <code>
-                HTML: <br>
-                p class="a"> hola /p> <br>
-                javaScript: <br>
-                let a = document.querySelector(".a"); <br>
-                a.setAttribute("contentEditable","true");
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<p class="a"> hola </p>
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+let a = document.querySelector(".a"); 
+a.setAttribute("contentEditable","true");
+                </textarea>
             </code>
             <p>
                 este metodo nos permitira modificar el valor de cualquier elemento.
@@ -53,12 +57,19 @@
 
         <div class="code_content">
             <code>
-                HTML: <br>
-                p class="a"> hola /p> <br>
-                javaScript: <br>
-                let a = document.querySelector(".a"); <br>
-                a.setAttribute("dir","rtl"); <br>
-                a.setAttribute("dir","rtl"); 
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<p class="a"> hola </p> 
+<p class="a_2"> hola </p>
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+let a = document.querySelector(".a");
+a.setAttribute("dir","rtl"); 
+
+let a_2 = document.querySelector(".a_2");
+a_2.setAttribute("dir","ltr"); 
+                </textarea>
             </code>
             <p>
                 esto nos servira para cambiar la posision de un texto de derecha a izquierda y biseversa.
@@ -67,11 +78,15 @@
 
         <div class="code_content">
             <code>
-                HTML:  <br>
-                p class="a" hidden> qwe /p> <br>
-                javaScript: <br>
-                let a = document.querySelector(".a");
-                a.removeAttribute("hidden")
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<p class="a" hidden> qwe </p> 
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+let a = document.querySelector(".a");
+a.removeAttribute("hidden")
+                </textarea>
             </code>
             <p>
                 esto nos servira para quitar del dom un elemento o hacerlo aparecer.
@@ -80,11 +95,15 @@
 
         <div class="code_content">
             <code> 
-                HTML: <br>
-                p class="a"> hola /p> <br>
-                javaScript: <br>
-                let a = document.querySelector(".a"); <br>
-                a.setAttribute("title","hola mundo"); 
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<p class="a"> hola </p> 
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+let a = document.querySelector(".a"); 
+a.setAttribute("title","hola mundo"); 
+                </textarea>
             </code>
             <p>
                 esto nos servira para poner un pequeño texto al pasarle el mouse al elemento.
@@ -95,8 +114,6 @@
         </p>
     </div>
 </main>
-
-
 
 <footer>
     <div class="footer_div">

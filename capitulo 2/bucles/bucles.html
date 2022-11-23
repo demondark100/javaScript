@@ -48,44 +48,55 @@
 
             <div class="code_content">
                 <code>
-                    bucle while: <br>
-                    pseudocodigo 1: <br>
-                    crear variable = valor; <br>
-                    bucle( condicional ) { <br>
-                        <b>variable++;</b> <br>
-                        <b>recorrer arreglo o hacer algo.</b> <br>
-                    } 
+                    <h2>bucle while:</h2>
+                    <p>pseudocodigo 1:</p>
+<textarea readonly class="codificacion">
+crear variable = valor; 
+bucle( condicional ) { 
+    variable++;
+    recorrer arreglo o hacer algo.
+};
+bucle mientras.
+</textarea>
                 </code>
             </div>
 
             <div class="code_content">
                 <code> 
-                    bucle for: <br>
-                    pseudocodigo 2: <br>
-                    bucle ( crear variable = valor ; condicional ; variable++ ) { <br>
-                        <b>recorrer arreglo o hacer algo.</b> <br>
-                    }
+                    <h2>bucle for:</h2>
+                    <p>pseudocodigo 2: </p>
+<textarea readonly class="codificacion">
+bucle ( crear variable = valor ; condicional ; variable++ ) { 
+    recorrer arreglo o hacer algo.
+}
+bucle para.
+</textarea>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    bicle in: <br>
-                    pseudocodigo 3: <br>
-                    resumen 1: <br>
-                    bucle ( recorrer bucle y mostrar posisiones ) { <br>
-                        <b>hacer algo.</b> <br>
-                    } <br>
+                    <h2>bicle in:</h2>
+                    <p>pseudocodigo 3:</p>
+<textarea readonly class="codificacion">
+bucle ( recorrer bucle y mostrar posisiones ) { 
+    hacer algo.
+};
+bucle for in.
+</textarea>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    bucle of: <br>
-                    pseudocodigo: <br>
-                    bucle ( recorrer bucle y mostrar el contenido ) { <br>
-                        <b>hacer algo.</b> <br>
-                    }
+                    <h2>bucle of:</h2>
+                    <p>pseudocodigo:</p>
+<textarea readonly class="codificacion">
+bucle ( recorrer bucle y mostrar el contenido ) { 
+    hacer algo.
+}
+bucle for of.
+</textarea>
                 </code>
             </div>
 
@@ -95,52 +106,115 @@
 
             <div class="code_content">
                 <code>
-                    javaScript while: <br>
-                    let i = 0; <br>
-                    while(i < 5){ <br>
-                        <b>i++;</b> <br>
-                        <b>console.log("se ejecuto este bucle");</b> <br>
-                    }
+                    <h2>javaScript while/mientras:</h2>
+<textarea readonly class="codificacion">
+let i = 0; 
+while(i < 5){ 
+    i++;
+    console.log("se ejecuto este bucle");
+}
+</textarea>
+                    <p>un ejemplo mas.</p>
+<textarea readonly class="codificacion">
+let i = 0;
+let pregunta = ""; 
+while(i < 1){
+    pregunta = prompt("cual es el mejor amigo de bob esponja?");
+    if (pregunta == "patricio" ||
+        pregunta == "Patricio") {
+        i = 1;
+        alert("correcto");
+    } else{
+        alert("incorrecto")
+    }
+}
+//este bucle se ejecutara hasta que el usuario diga patricio o Patricio.
+</textarea>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    javaScript for: <br>
-                    for(let i = 0; i < 5; i++){ <br>
-                        <b>console.log("se ejecuto el bloque for");</b> <br>
-                    }
+                    <h2>javaScript for/para:</h2>
+<textarea readonly class="codificacion">
+for(let i = 0; i < 5; i++){
+    console.log("se ejecuto el bloque for");
+}
+</textarea>
+                    <p>un ejemplo mas.</p>
+<textarea readonly class="codificacion">
+let numeros,pares,impares,negativos,positivos;
+pares = 0;
+impares = 0;
+positivos = 0;
+negativos = 0;
+
+for (let i = 1; i <= 10; i++) {
+    numeros = prompt(`escriba el numero ${i}`);
+    if (numeros % 2 == 0) {
+        pares += 1;
+    } else{
+        impares += 1;
+    }
+    if (numeros > 0) {
+        positivos += 1;
+    } else{
+        negativos += 1;
+    }
+}
+console.log(`
+    el total de numeros pares es ${pares} , 
+    el total de numeros impares es ${impares} , 
+    el total de numeros positivos es ${positivos} , 
+    el total de numeros negativos es ${negativos}.
+`);
+
+//aqui veremos cuantos numeros son positivos,negativos,pares,impares.
+</textarea>
                 </code>
             </div>
 
-
             <div class="code_content">
+                <h2>javaScript bucle in:</h2>
                 <code>
-                    javaScript bucle in: <br>
-                    let arreglo = [ <br>
-                        <b>"user1",</b> <br>
-                        <b>"user2",</b> <br>
-                        <b>"user3",</b> <br>
-                        <b>"user4"</b> <br>
-                    ]; <br>
-                    for(let arr in arreglo){ <br>
-                        <b>console.log(arr);</b> <br>
-                    }
+                    <textarea readonly class="codificacion">
+let arreglo = [ 
+    "user1",
+    "user2",
+    "user3",
+    "user4" 
+]; 
+for(let arr in arreglo){ 
+    console.log(arr);
+};
+//resultado:
+//0
+//1
+//2
+//3
+                    </textarea>
                 </code>
             </div>
 
             <div class="code_content">
+                <h2>javaScript bucle of:</h2>
                 <code>
-                    javaScript bucle of: <br>
-                    let arreglo = [ <br>
-                        <b>"user1",</b> <br>
-                        <b>"user2",</b> <br>
-                        <b>"user3",</b> <br>
-                        <b>"user4"</b> <br>
-                        ]; <br>
-                        for(let arr of arreglo){ <br>   
-                            <b>console.log(arr);</b> <br>
-                        }
+                    <textarea readonly class="codificacion">
+let arreglo = [ 
+    "user1",
+    "user2",
+    "user3",
+    "user4"
+]; 
+for(let arr of arreglo){ 
+    console.log(arr);
+};
+//resultado:
+//user1
+//user2
+//user3
+//user4
+                    </textarea>
                 </code>
             </div>
         </div>

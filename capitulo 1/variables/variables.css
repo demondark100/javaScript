@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-image: url("https://i.pinimg.com/originals/bd/85/b3/bd85b31a856bba1e1db5bcfefe71d554.png");
+    background-image: url("https://wallpapersmug.com/download/750x1334/ee041b/computer-screen-code-program.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 header{
-    background-color: #0027ec77;
+    background-color: #363636ee;
     box-sizing: border-box;
     padding: 3px;
     height: 35px;
@@ -36,7 +36,7 @@ header{
 }
 footer{
     margin-top: auto;
-    background-color: #363636;
+    background-color: #211a1a;
 }
 
 
@@ -74,12 +74,16 @@ footer{
 }
 
 .code_content{
-    background-color: #000000;
+    width: 80%;
+    margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 8px;
 }
 
+.texto_code{
+    margin-left: -50%;
+}
 .li_nav a{
     color: #e7e4ff;
     font-size: 15px;
@@ -89,9 +93,9 @@ footer{
 }
 
 .mover{
-    background-color: #0027ec77;
+    background-color: #363636ee;
     margin-left:-45px;
-    font-size: 12px;
+    font-size: 15px;
     transition-duration: .5s;
 }
 .mover .li_nav{
@@ -101,15 +105,12 @@ footer{
 .mover_content{
     margin-top: 118px;
 }
-code{
-    font-size: 12px;
-}
 
-p{
-    font-size: 12px;
-}
 
 @media(min-width: 820px){
+    body{
+        background-image: url("https://fondosmil.com/fondo/52521.jpg");
+    }
     .menu{
         margin-left: -50000%;
     }
@@ -140,9 +141,6 @@ p{
         font-size: 25px;
         color: #e7e4ff;
     }
-    p{
-        font-size: 25px;
-    }
 }
 
 
@@ -156,10 +154,10 @@ h1{
     margin-top: 15px;
     width: 80%;
     max-width: 1200px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
     color: #f1ffb5;
-    background-color: #24381188;
+    background-color: #00000066;
     margin-bottom: 10px;
 }
 
@@ -181,5 +179,28 @@ code{
     }
     .code_content b {
         margin-left: 25px;
+    }
+}
+
+.codificacion{
+    margin: auto;
+    max-width: 100%;
+    max-height: 85px;
+    width: 300%;
+    height: 85px;
+    background: linear-gradient(0deg,#353434ae,transparent,#353434ae);
+    border: none;
+    color: #f1ffb3;
+    display: flex;
+    justify-content: start;
+    outline: none;
+}
+@media(min-width:820px){
+    .codificacion{
+        width: 90%;
+        height: 200px;
+        max-width: 100%;
+        max-height: 200px;
+        background: linear-gradient(0deg,#2e272799,transparent,#2e272799);
     }
 }

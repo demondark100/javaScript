@@ -44,25 +44,29 @@
         <div class="code_content">
             <h2>ajax</h2>
             <code>
-                let peticion = new XMLHttpRequest <br>
-                peticion.addEventListener("load",()=>{ <br>
-                    <b>let trabajar;</b> <br>
-                    <b>if(peticion.status == 200 || peticion.status == 201) trabajar = peticion.response</b> <br>
-                    <b>else trabajar = "no se encontro la peticion"</b> <br>
-                    <b>console.log(JSON.parse(trabajar))</b> <br>
-                    <p>
-                        //aqui estamos validando los estados para que se muestren los resultados segun sea.
-                    </p>
-                }) <br>
-                peticion.open("POST","<a href="https://reqres.in/api/users">https://reqres.in/api/users</a>") <br>
-                peticion.setRequestHeader("Content-type","application/json;charset=UTF8") <br>
-                <p>
-                    //con "setRequestHeader" estamos enviando los nuevos datos al servidor.
-                </p>
-                peticion.send(JSON.stringify({ <br>
-                    <b>"name": "no se",</b> <br>
-                    <b>"lastname": "tampoco se"</b> <br>
-                }))
+<textarea readonly class="codificacion">
+let peticion = new XMLHttpRequest 
+peticion.addEventListener("load",()=>{ 
+    let trabajar;
+    if(peticion.status == 200 ||
+        peticion.status == 201) trabajar = peticion.response
+    else trabajar = "no se encontro la peticion"
+    console.log(JSON.parse(trabajar))
+    
+    //aqui estamos validando los estados para que se muestren los resultados segun sea.
+        
+}) 
+peticion.open("POST","https://reqres.in/api/users") 
+peticion.setRequestHeader("Content-type","application/json;charset=UTF8") 
+    
+    //con "setRequestHeader" estamos enviando los nuevos datos al servidor.
+
+peticion.send(JSON.stringify({ 
+    "name": "no se",
+    "lastname": "tampoco se"
+}))       
+</textarea>
+
             </code>
         </div>
     </div>

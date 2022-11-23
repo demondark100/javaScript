@@ -43,16 +43,20 @@
             <h1>propiedades de childs</h1>
             <div class="code_content">
                 <code>
-                    HTML: <br>
-                    div class="content"> <br>
-                        p class="p">hola mundo /p> <br>
-                    /div> <br>
-                    javaScript: <br>
-                    const content = document.querySelector(".content"); <br>
-                    const p = document.querySelector(".p"); <br>
-                    const parrafo_nuevo = document.createElement("P"); <br>
-                    parrafo_nuevo.textContent = "adios mundo"; <br>
-                    content.replaceChild(parrafo_nuevo,p)
+                    <p>HTML:</p>
+                    <textarea readonly class="codificacion">
+<div class="content"> 
+    <p class="p"> hola mundo </p> 
+</div> 
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+const content = document.querySelector(".content"); 
+const p = document.querySelector(".p"); 
+const parrafo_nuevo = document.createElement("P"); 
+parrafo_nuevo.textContent = "adios mundo"; 
+content.replaceChild(parrafo_nuevo,p)
+                    </textarea>
                 </code>
                 <p>
                     con "replaceChild" reemplazaremos un elemento hijo por otro.
@@ -64,14 +68,18 @@
 
             <div class="code_content">
                 <code>
-                    HTML: <br>
-                    div class="content"> <br>
-                        p class="parrafo">hola mundo /p> <br>
-                    /div> <br>
-                    javaScript: <br>
-                    const content = document.querySelector(".content"); <br>
-                    const parrafo = document.querySelector(".parrafo"); <br>
-                    content.removeChild(parrafo);
+                    <p>HTML:</p>
+                    <textarea readonly class="codificacion">
+<div class="content"> 
+    <p class="parrafo">hola mundo </p> 
+</div> 
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+const content = document.querySelector(".content"); 
+const parrafo = document.querySelector(".parrafo"); 
+content.removeChild(parrafo);
+                    </textarea>
                 </code>
                 <p>
                     con "removeChild" quitarenis un elemento hijo a un contenedor.
@@ -80,13 +88,20 @@
 
             <div class="code_content">
                 <code>  
-                    HTML: <br>
-                    div class="content"> <br>
-                        p class="parrafo"> /p> <br>
-                    /div> <br>
-                    javaScript: <br>
-                    const content = document.querySelector(".content"); <br>
-                    content.hasChildNodes();
+                    <p>HTML:</p>
+                    <textarea readonly class="codificacion">
+<div class="content"> 
+    <p class="parrafo"> </p> 
+</div> 
+<div class="content"> 
+    <p class="parrafo"> </p> 
+</div> 
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+const content = document.querySelector(".content"); 
+content.hasChildNodes();
+                    </textarea>
                 </code>
                 <p>
                     con "hasChildNodes" comprobaremos si un elemento tiene o no un elemento hijo.

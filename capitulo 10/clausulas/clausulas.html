@@ -45,13 +45,15 @@
         </p>
         <div class="code_content">
             <code>
-                const saludar = (nombre) =>{ <br>
-                    return function(){ <br>
-                        <b>console.log(`hola ${nombre}`)</b> <br>
-                    } <br>
-                } <br>
-                let saludo = saludar("una persona") <br>
-                addEventListener("load",saludo)
+<textarea readonly class="codificacion">
+const saludar = (nombre) =>{ 
+    return function(){ 
+        console.log(`hola ${nombre}`)
+    } 
+} 
+let saludo = saludar("una persona") 
+addEventListener("load",saludo)             
+</textarea>
             </code>
         </div>
 
@@ -61,63 +63,71 @@
 
         <h2>sin clausula</h2>
         <div class="code_content">
+            <p>html:</p>
             <code>
-                <p>html:</p>
-                div class="content"> <br>
-                    <b>button class="t10 boton_1">10px /button></b> <br>
-                    <b>button class="t15 boton_1">15px /button></b> <br>
-                    <b>button class="t20 boton_1">20px /button></b> <br>
-                    div class="texto"> <br>
-                        <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis</b> <br>
-                        <b>libero repellendus et esse suscipit veritatis iure rem sed eum fuga</b> <br>
-                        <b>quo odit ad necessitatibus voluptas, similique reiciendis</b> <br> 
-                        <b>recusandae? Laboriosam, eveniet!</b> <br>
-                    /div> <br>
-                /div>
+<textarea readonly class="codificacion">
+<div class="content"> 
+    <button class="t10 boton_1"> 10px </button>
+    <button class="t15 boton_1"> 15px </button>
+    <button class="t20 boton_1"> 20px </button>
+    <div class="texto"> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+        libero repellendus et esse suscipit veritatis iure rem sed eum fuga
+        quo odit ad necessitatibus voluptas, similique reiciendis
+        recusandae? Laboriosam, eveniet!
+    </div> 
+</div>
+</textarea>
                 <p>
                     javaScript:
                 </p>
                 <code>
-                    const cambiarTamaño = tamaño =>{ <br>
-                    <b>document.querySelector(".texto").style.fontSize = `${tamaño}px`</b> <br>
-                    //esta funcion recibe un parametro para cambiar el tamaño de un texto. <br>
-                    } <br>
-                    document.querySelector(".t10").addEventListener("click",()=>cambiarTamaño(10)); <br>
-                    document.querySelector(".t15").addEventListener("click",()=>cambiarTamaño(15)); <br>
-                    document.querySelector(".t20").addEventListener("click",()=>cambiarTamaño(20)); 
+<textarea readonly class="codificacion">
+const cambiarTamaño = tamaño =>{ 
+    document.querySelector(".texto").style.fontSize = `${tamaño}px`
+    //esta funcion recibe un parametro para cambiar el tamaño de un texto. 
+} 
+document.querySelector(".t10").addEventListener("click",()=>cambiarTamaño(10)); 
+document.querySelector(".t15").addEventListener("click",()=>cambiarTamaño(15)); 
+document.querySelector(".t20").addEventListener("click",()=>cambiarTamaño(20));          
+</textarea>
                 </code>
             </code>
         </div>
         <h2>con clausula</h2>
         <div class="code_content">
+            <p>html:</p>
             <code>
-                <p>html:</p>
-                div class="content"> <br>
-                    <b>button class="t10 boton_1">10px /button></b> <br>
-                    <b>button class="t15 boton_1">15px /button></b> <br>
-                    <b>button class="t20 boton_1">20px /button></b> <br>
-                    div class="texto"> <br>
-                        <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis</b> <br>
-                        <b>libero repellendus et esse suscipit veritatis iure rem sed eum fuga</b> <br>
-                        <b>quo odit ad necessitatibus voluptas, similique reiciendis</b> <br> 
-                        <b>recusandae? Laboriosam, eveniet!</b> <br>
-                    /div> <br>
-                /div>
+<textarea readonly class="codificacion">
+<div class="content"> 
+    <button class="t10 boton_1">10px </button>
+    <button class="t15 boton_1">15px </button>
+    <button class="t20 boton_1">20px </button>
+    <div class="texto"> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+        libero repellendus et esse suscipit veritatis iure rem sed eum fuga
+        quo odit ad necessitatibus voluptas, similique reiciendis
+        recusandae? Laboriosam, eveniet!
+    </div> 
+</div>             
+</textarea>
                 <p>
                     javaScript:
                 </p>
-                const cambiarTamaño = tamaño =>{ <br>
-                    return ()=>{ <br>
-                        <b>document.querySelector(".texto").style.fontSize = `${tamaño}px`</b> <br>
-                    } <br>
-                    //esta funcion recibe un parametro para cambiar el tamaño de un texto. <br>
-                } <br>
-                let t10 = cambiarTamaño(10); <br>
-                let t15 = cambiarTamaño(15); <br>
-                let t20 = cambiarTamaño(20); <br>
-                    document.querySelector(".t10").addEventListener("click",t10); <br>
-                    document.querySelector(".t15").addEventListener("click",t15); <br>
-                    document.querySelector(".t20").addEventListener("click",t20); 
+<textarea readonly class="codificacion">
+const cambiarTamaño = tamaño =>{ 
+    return ()=>{ 
+        document.querySelector(".texto").style.fontSize = `${tamaño}px`
+    } 
+    //esta funcion recibe un parametro para cambiar el tamaño de un texto. 
+} 
+let t10 = cambiarTamaño(10); 
+let t15 = cambiarTamaño(15); 
+let t20 = cambiarTamaño(20); 
+    document.querySelector(".t10").addEventListener("click",t10); 
+    document.querySelector(".t15").addEventListener("click",t15); 
+    document.querySelector(".t20").addEventListener("click",t20);              
+</textarea>
             </code>
         </div>
         <p>
@@ -133,8 +143,6 @@
         </div>
     </div>
 </main>
-
-
 
 
 <footer>

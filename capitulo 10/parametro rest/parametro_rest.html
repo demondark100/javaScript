@@ -44,18 +44,22 @@
         </p>
         <div class="code_content">
             <code>
-                const funcionIndefinida = (...rest) =>{ <br>
-                    <b>console.log(rest)</b> <br>
-                } <br>
-                funcionIndefinida(5,8,3,"mas parametros") <br>
+<textarea readonly class="codificacion">
+const funcionIndefinida = (...rest) =>{ 
+    console.log(rest)
+} 
+funcionIndefinida(5,8,3,"mas parametros")                 
+</textarea>
             </code>
         </div>
         <div class="code_content">
             <code>
-                function masParametros(...rest){ <br>
-                    <b>console.log(rest)</b> <br>
-                } <br>
-                masParametros(5,8,12,25,"muchos parametros indefinidos")
+<textarea readonly class="codificacion">
+function masParametros(...rest){ 
+    console.log(rest)
+} 
+masParametros(5,8,12,25,"muchos parametros indefinidos")         
+</textarea>
             </code>
         </div>
         <p>
@@ -63,15 +67,17 @@
         </p>
         <div class="code_content">
             <code>
-                const numeros = (...num) =>{ <br>
-                let resultado = 0; <br>
-                for (let i = 0; i < num.length; i++){ <br>
-                    <b>resultado += num[i]</b> <br>
-                } <br>
-                console.log(resultado) <br>
-                } <br>
-                numeros(5,25) <br>
-                //esta funcion sumara todos los parametros que pongamos puedes poner los parametros que quieras en esta funcion.
+<textarea readonly class="codificacion">
+const numeros = (...num) =>{ 
+    let resultado = 0; 
+    for (let i = 0; i < num.length; i++){ 
+        resultado += num[i]
+    } 
+    console.log(resultado) 
+} 
+numeros(5,25) 
+//esta funcion sumara todos los parametros que pongamos puedes poner los parametros que quieras en esta funcion.           
+</textarea>
             </code>
         </div>
         <p>
@@ -83,16 +89,20 @@
         <h2>error</h2>
         <div class="code_content">
             <code>
-                function error_1(...rst,a){ <br>
-                    <b>console.log(`${rst} ${a}`)</b> <br>
-                } <br>
-                error_1(8,10) <br> <br>
-            </code>
-            <code>
-                const error_2 =(...rst,a) =>{ <br>
-                    <b>console.log(`${rst} ${a}`)</b> <br>
-                } <br>
-                error_1(8,10)
+                <p>funcio tracicional</p>
+<textarea readonly class="codificacion">
+function error_1(...rst,a){ 
+    console.log(`${rst} ${a}`)
+} 
+error_1(8,10)       
+</textarea>
+                <p>funcion flecha</p>
+<textarea readonly class="codificacion">
+const error_2 =(...rst,a) =>{ 
+    console.log(`${rst} ${a}`)
+} 
+error_1(8,10)                 
+</textarea>
             </code>
         </div>
 
@@ -100,17 +110,20 @@
 
         <div class="code_content">
             <code>
-                function correcto_1(a,...rst){ <br>
-                    <b>console.log(`${a} - ${rst}`)</b> <br>
-                } <br>
-                correcto_1(8,10) <br> <br>
-            </code>
-            <code>
-                const correcto_2 = (a,...rst) =>{ <br>
-                    <b>console.log(`${a} - ${rst}`)</b> <br>
-                } <br>
-                correcto_2(8,10) 
-            </code>
+<textarea readonly class="codificacion">
+function correcto_1(a,...rst){ 
+    console.log(`${a} - ${rst}`)
+} 
+correcto_1(8,10)     
+
+
+
+const correcto_2 = (a,...rst) =>{ 
+    console.log(`${a} - ${rst}`)
+} 
+correcto_2(8,10) 
+</textarea>
+</code>
         </div>
         <p>
             esto pasa proque los parametros rest son ilimitados/indefinidos por eso siempre deben ir al final.

@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-image: url("https://i.pinimg.com/originals/bd/85/b3/bd85b31a856bba1e1db5bcfefe71d554.png");
+    background-image: url("https://wallpapersmug.com/download/750x1334/ee041b/computer-screen-code-program.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,12 +14,16 @@ a{
     text-decoration: none;
 }
 header{
-    background-color: #0027ec77;
+    background-color: #363636ee;
     box-sizing: border-box;
     padding: 3px;
     height: 35px;
 }
 
+h1{
+    text-align: center;
+    color: #e7e4ff;
+}
 
 .header_content{
     display: flex;
@@ -36,9 +40,13 @@ header{
 }
 footer{
     margin-top: auto;
-    background-color: #363636;
+    background-color: #211a1a;
 }
-
+h2{
+    color: #e7e4ff;
+    text-align: center;
+    font-size: 28px;
+}
 
 .img_logo{
     margin-top: 2px;
@@ -89,7 +97,7 @@ footer{
 }
 
 .mover{
-    background-color: #0027ec77;
+    background-color: #363636ee;
     margin-left:-45px;
     font-size: 15px;
     transition-duration: .5s;
@@ -110,8 +118,14 @@ p{
 }
 
 @media(min-width: 820px){
+    body{
+        background-image: url("https://fondosmil.com/fondo/52521.jpg");
+    }
     .menu{
         margin-left: -50000%;
+    }
+    h2{
+        font-size: 40px;
     }
     header{
         height: 60px;
@@ -146,9 +160,10 @@ p{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 10px;
-    background-color: #00000088;
+    
     padding: 10px;
-    width: 90%;
+    width: 65%;
+    max-width: 950px;
 }
 a{
     margin-top: 10px;
@@ -157,6 +172,10 @@ a{
 .capitulo_1 a{
     display: flex;
     color: #f1ffb3;
+}
+.capitulo_1 a:hover{
+    background-color: #21d527dd;
+    color: #211a1a;
 }
 
 

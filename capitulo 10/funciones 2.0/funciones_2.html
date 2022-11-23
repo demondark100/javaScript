@@ -53,16 +53,19 @@
                 error:
             </h2>
             <code>
-                const musica = () => {"riptide"} <br>
-                console.log(musica()) <br>
-                <p>
-                    esto nos retornara undefined.
-                </p>
-                function musica () "riptide"; <br>
-                console.log(musica())
-                <p>
-                    y aqui directamente nos dara error.
-                </p>
+<textarea readonly class="codificacion">
+const musica = () => {"riptide"} 
+console.log(musica()) 
+
+    //esto nos retornara undefined.
+
+
+function musica () "riptide"; 
+console.log(musica())
+
+//y aqui directamente nos dara error.
+
+</textarea>
             </code>
         </div>
 
@@ -72,8 +75,10 @@
             </h2>
             <div class="code_content">
                 <code>
-                    const musica = () => "riptide"; <br>
-                    console.log(musica())
+<textarea readonly class="codificacion">
+const musica = () => "riptide";
+console.log(musica())          
+</textarea>
                 </code>
                 <p>
                     como ya supondran nos retornara "riptide".
@@ -87,14 +92,16 @@
 
         <div class="code_content">
             <code>
-                const music = nombre =>{ <br>
-                    <b>console.log(nombre)</b> <br>
-                } <br>
-                music("Rain Over Me") <br> <br>
-            </code>
-            <code>
-                const music = nombre => "Rain Over Me" <br>
-                console.log(music())
+<textarea readonly class="codificacion">
+const music = nombre =>{ 
+    console.log(nombre)
+} 
+music("Rain Over Me")
+
+
+const music = nombre => "Rain Over Me"
+console.log(music())
+</textarea>
             </code>
         </div>
 
@@ -114,14 +121,16 @@
                 error:
             </h2>
             <code>
-                const objeto = { <br>
-                    <b>musica: "A Sky Full of Stars",</b> <br>
-                    <b>artusta: "Coldplay",</b> <br>
-                    <b>mostrar: ()=>{</b> <br>
-                        <b>console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                objeto.mostrar()
+<textarea readonly class="codificacion">
+const objeto = { 
+    musica: "A Sky Full of Stars",
+    artusta: "Coldplay",
+    mostrar: ()=>{
+        console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)
+    }
+} 
+objeto.mostrar()             
+</textarea>
             </code>
             <p>
                 esto nos mostrara "undefined"
@@ -133,14 +142,16 @@
                 correcto:
             </h2>
             <code>
-                const objeto = { <br>
-                    <b>musica: "A Sky Full of Stars",</b> <br>
-                    <b>artusta: "Coldplay",</b> <br>
-                    <b>mostrar: function(){</b> <br>
-                        <b>console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                objeto.mostrar()
+<textarea readonly class="codificacion">
+const objeto = { 
+    musica: "A Sky Full of Stars",
+    artusta: "Coldplay",
+    mostrar: function(){
+        console.log(`el artista es ${this.artusta} y la musica es ${this.musica}`)
+    }
+} 
+objeto.mostrar()                 
+</textarea>
             </code>
         </div>
 
@@ -154,13 +165,15 @@
 
         <div class="code_content">
             <code>
-                const objeto1 = { <br>
-                    <b>color: "verde",</b> <br>
-                    <b>mostrar: function (){</b> <br> 
-                        <b>console.log(`el color es ${this.color}`)</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                objeto1.mostrar()
+<textarea readonly class="codificacion">
+const objeto1 = { 
+    color: "verde",
+    mostrar: function (){
+        console.log(`el color es ${this.color}`)
+    }
+} 
+objeto1.mostrar()            
+</textarea>
             </code>
             <p>
                 con la "function" a la hora de usar "this" se va hacia el metodo y no hay ningun problema osea que muestra lo que queremos que muestre.
@@ -169,15 +182,17 @@
 
         <div class="code_content">
             <code>
-                const objeto2 = { <br>
-                    <b>color: "verde",</b> <br>
-                    <b>mostrar: ()=>{</b> <br> 
-                        <b>console.log(`el color es ${this.color}`)</b> <br>
-                    <b>}</b> <br>
-                } <br>
-                window.color = "azul" <br>
-                objeto2.mostrar() <br>
-                //resultado: "el color es azul"
+<textarea readonly class="codificacion">
+const objeto2 = { 
+    color: "verde",
+    mostrar: ()=>{
+        console.log(`el color es ${this.color}`)
+    }
+} 
+window.color = "azul" 
+objeto2.mostrar() 
+//resultado: "el color es azul"                 
+</textarea>
             </code>
             <p>
                 como hemos dicho con la funcion flecha accedemos al objeto que va a una escala mas arriba en este caso va hasta el objeto window.
@@ -193,12 +208,14 @@
                 incorrecto:
             </h2>
             <code>
-                const constructor=(musica,artista)=>{ <br>
-                    <b>this.musica = musica,</b> <br>
-                    <b>this.artista = artista</b> <br>
-                } <br> 
-                const musica = new constructor("Mary On A Cross","Ghost") <br>
-                console.log(musica)
+<textarea readonly class="codificacion">
+const constructor=(musica,artista)=>{ 
+    this.musica = musica,
+    this.artista = artista
+} 
+const musica = new constructor("Mary On A Cross","Ghost") 
+console.log(musica)                 
+</textarea>
             </code>
             <p>
                 esto directamente nos mandara un error ya que las funciones flecha no se pueden usar como un constructor.
@@ -210,12 +227,14 @@
                 correcto:
             </h2>
             <code>
-                function constructo(musica,artista){ <br>
-                    <b>this.musica = musica,</b> <br>
-                    <b>this.artista = artista</b> <br>
-                } <br>
-                const music = new constructo("Mary On A Cross","Ghost") <br>
-                console.log(music)
+<textarea readonly class="codificacion">
+function constructo(musica,artista){ 
+    this.musica = musica,
+    this.artista = artista
+} 
+const music = new constructo("Mary On A Cross","Ghost") 
+console.log(music)
+</textarea>
             </code>
             <p>
                 con las funciones clasicas si nos permite crear un constructor para un objeto.

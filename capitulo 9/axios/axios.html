@@ -49,9 +49,14 @@
                 archivo HTML para evitar errores no deseados.
             </p>
             <p>ejemplo</p>
+            <p>aqui el link para piner la libreria en tu proyecto.</p>
+            <a href="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js</a>
+            <p>html:</p>
             <code>
-                script src="<a href="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js</a>"> /script> <br>
-                script src="archivo.js"> /script>
+<textarea readonly class="codificacion">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
+<script src="archivo.js"> </script>                        
+</textarea>
             </code>
         </div>
 
@@ -60,9 +65,13 @@
         </p>
 
         <div class="code_content">
+            <p>link de la API</p>
+            <a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>
             <code>
-                axios("<a href="https://reqres.in/api/users/2">https://reqres.in/api/users/2</a>") <br>
-                <b>.then(res=>console.log(res))</b>
+<textarea readonly class="codificacion">
+axios("https://reqres.in/api/users/2")
+    .then(res=>console.log(res))
+</textarea>
             </code>
             <p>
                 con esto ya desencapsulamos toda la informacio json.
@@ -76,24 +85,28 @@
         <div class="code_content">
             <p>forma1: (recomendado)</p>
             <code>
-                axios.post("https://reqres.in/api/users/2",{ <br>
-                    <b>"music": "A Sky Full of Stars",</b> <br>
-                    <b>"artista": "Coldplay"</b> <br>
-                }) <br>
-                    <b>.then(res=>console.log(res))</b>
+<textarea readonly class="codificacion">
+axios.post("https://reqres.in/api/users/2",{
+    "music": "A Sky Full of Stars",
+    "artista": "Coldplay"
+})
+    .then(res=>console.log(res))         
+</textarea>
             </code>
         </div>
 
         <div class="code_content">
             <code>
-                axios("https://reqres.in/api/users/2",{ <br>
-                    <b>method: "post",</b> <br>
-                    <b>data: {</b> <br>
-                        <b>"music": "A Sky Full of Stars",</b> <br>
-                        <b>"artista": "Coldplay"</b> <br>
-                    <b>}</b> <br>
-                }) <br>
-                    <b>.then(res=>console.log(res))</b>
+<textarea readonly class="codificacion">
+axios("https://reqres.in/api/users/2",{ 
+    method: "post",
+    data: {
+        "music": "A Sky Full of Stars",
+        "artista": "Coldplay"
+    }
+}) 
+    .then(res=>console.log(res))
+</textarea>
             </code>
         </div>
     </div>

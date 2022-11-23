@@ -42,14 +42,18 @@
         <h1>modicacion childs</h1>
         <div class="code_content">
             <code>
-                HTML: <br>
-                div class="contenedor">  /div> <br>
-                javaScript: <br>
-                let parrafo = document.createElement("P"); <br>
-                let fragmento = document.createDocumentFragment(); <br>
-                parrafo.textContent = "hola mundo"; <br>
-                fragmento.appendChild(parrafo); <br>
-                contenedor.appendChild(fragmento);
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<div class="contenedor">  </div>
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+let parrafo = document.createElement("P"); 
+let fragmento = document.createDocumentFragment(); 
+parrafo.textContent = "hola mundo"; 
+fragmento.appendChild(parrafo); 
+contenedor.appendChild(fragmento);
+                </textarea>
             </code>
             <p>
                 con "appendChild()" hacemos que un elemento creado en javaScript sea puesto como hijo a un elemento HTML ya creado. 
@@ -58,16 +62,20 @@
 
         <div class="code_content">
             <code>
-                HTML: <br>
-                div class="a_content"> <br>
-                    p> algo 1 /p> <br>
-                    p> algo 2 /p> <br>
-                    p> algo 3 /p> <br>
-                /div> <br>
-                javaScript: <br>
-                const a_content = document.querySelector(".a_content"); <br>
-                let algo1 = a_content.firstElementChild; <br>
-                let algo2 = a_content.lastElementChild; <br>
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<div class="a_content"> 
+    <p> algo 1 </p> 
+    <p> algo 2 </p> 
+    <p> algo 3 </p> 
+</div> 
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+const a_content = document.querySelector(".a_content"); 
+let algo1 = a_content.firstElementChild; 
+let algo2 = a_content.lastElementChild; 
+                </textarea>
             </code>
             <p>
                 con "firstElementChild" y "lastElementChild" nos mostrara el primer y ultimo hijo del contenedor
@@ -76,15 +84,19 @@
 
         <div class="code_content">
             <code>
-                HTML: <br>
-                div class="a_content"> <br>
-                    p> algo 1 /p> <br>
-                    p> algo 2 /p> <br>
-                    p> algo 3 /p> <br>
-                /div> <br>
-                javaScript: <br>
-                const a_content = document.querySelector(".a_content"); <br>
-                let algo1 = a_content.children[]; 
+                <p>HTML:</p>
+                <textarea readonly class="codificacion">
+<div class="a_content"> 
+    <p> algo 1 </p> 
+    <p> algo 2 </p> 
+    <p> algo 3 </p> 
+</div> 
+                </textarea>
+                <p>javaScript:</p>
+                <textarea readonly class="codificacion">
+const a_content = document.querySelector(".a_content"); 
+let algo1 = a_content.children[]; 
+                </textarea>
             </code>
             <p>
                 con "children[]" podremos ver los hijos en la posision que queramos.

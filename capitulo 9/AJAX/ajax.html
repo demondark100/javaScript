@@ -54,10 +54,11 @@
                 <p>
                     javaScript:
                 </p>
-                sintaxis de objeto "XMLHttpRequest"; <br> <br>
+<textarea readonly class="codificacion">
+sintaxis de objeto "XMLHttpRequest";
 
-                const peticion = new XMLHttpRequest; <br> <br>
-
+const peticion = new XMLHttpRequest;
+</textarea>
                 con "XMLHttpRequest" podemos enviar peticiones "GET" , "POST" , etc.
             </code>
         </div>
@@ -66,13 +67,15 @@
                 archivo txt:
             </p>
             <p>
-                nombre del archivo txt "datos.txt":
+                nombre del archivo txt "datos.txt"
             </p>
             <code>
-                { <br>
-                    <b>"musica": "fiesta pagana",</b> <br>
-                    <b>"genero": "rock"</b> <br>
-                }
+<textarea readonly class="codificacion">
+{ 
+    "musica": "fiesta pagana",
+    "genero": "rock"
+}
+</textarea>
             </code>
         </div>
 
@@ -82,15 +85,20 @@
                 pseudocodigo:
             </p>
             <code>
-                const peticion = new XMLHttpRequest; <br> <br>
-                peticion.abrir("metodo","url archivo o sitio web"); <br>
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest;
+
+peticion.abrir("metodo","url archivo o sitio web");                         
+</textarea>
             </code>
             <p>
                 javaScript;
             </p>
             <code>
-                const peticion = new XMLHttpRequest; <br> <br>
-                peticion.open("GET","datos.txt");
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest;
+peticion.open("GET","datos.txt");                        
+</textarea>
             </code>
             <p>
                 con "open" abriremos el archivo o url para poder enviar o recibir datos. 
@@ -103,17 +111,21 @@
                 pseudocodigo:
             </p>
             <code>
-                const peticion = new XMLHttpRequest; <br> <br>
-                peticion.abrir("metodo","url archivo o sitio web"); <br>
-                peticion.enviar()
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest;
+peticion.abrir("metodo","url archivo o sitio web"); 
+peticion.enviar()  
+</textarea>
             </code>
             <p>
                 javaScript:
             </p>
             <code>
-                const peticion = new XMLHttpRequest; <br> <br>
-                peticion.open("GET","datos.txt"); <br>
-                peticion.send()
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest;
+peticion.open("GET","datos.txt"); 
+peticion.send()
+</textarea>
             </code>
             <p>
                 con "send()" podemos enviar los datos.
@@ -123,14 +135,17 @@
         <div class="code_content">
             <h2>metodos de ajax</h2>
             <code>
-                const peticion = new XMLHttpRequest; <br>
-                    <b>peticion.addEventListener("readystatechange",()=>{</b> <br>
-                    <b>console.log(peticion.readyState);</b> <br>
-                    <b>console.log(peticion.response)</b> <br>
-                    <b>console.log(peticion.status)</b> <br>
-                }) <br>
-                peticion.open("GET","datos.txt") <br>
-                peticion.send() <br>
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest; 
+
+peticion.addEventListener("readystatechange",()=>{
+    console.log(peticion.readyState);
+    console.log(peticion.response)
+    console.log(peticion.status)
+}) 
+peticion.open("GET","datos.txt") 
+peticion.send() 
+</textarea>
             </code>
         </div>
 
@@ -143,24 +158,30 @@
         </div>
         
         <div class="code_content">
+            <p>
+                con "readyState" veremos los estados.
+            </p>
             <code>
-                <p>
-                    con "readyState" veremos los estados.
-                </p>
-                estado 1: la solicitud se creo correctamente. <br>
-                estado 2: la solicitud se envio correctamente. <br>
-                estado 3: la solicitud se esta procesando. <br>
-                estado 4: todo esta listo y ya se puede usar el resultado.
+<textarea readonly class="codificacion">
+estado 1: la solicitud se creo correctamente. 
+estado 2: la solicitud se envio correctamente. 
+estado 3: la solicitud se esta procesando. 
+estado 4: todo esta listo y ya se puede usar el resultado.
+</textarea>
             </code>
         </div>
 
         <div class="code_content">
-            <code>
+            <p>                
                 con "response" mostraremos el resultado en este caso: <br>
-                { <br>
-                    <b>"musica": "fiesta pagana",</b> <br>
-                    <b>"genero": "rock"</b> <br>
-                }
+            </p>
+            <code>
+<textarea readonly class="codificacion">
+{ 
+    "musica": "fiesta pagana",
+    "genero": "rock"
+}                        
+</textarea>
             </code>
         </div>
 
@@ -175,16 +196,18 @@
         <div class="code_content">
             <h2>readystatechange</h2>
             <code>
-                const peticion = new XMLHttpRequest <br>
-                peticion.addEventListener("readystatechange",()=>{ <br>
-                    if(peticion.readyState == 4 && <br>
-                        peticion.status == 200 <br>
-                        ){  <br>
-                            <b>console.log(peticion.response)</b> <br>
-                        } <br>
-                }) <br>
-                peticion.open("GET","datos.txt") <br>
-                peticion.send() 
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest 
+peticion.addEventListener("readystatechange",()=>{ 
+    if(peticion.readyState == 4 && 
+        peticion.status == 200 
+    ){  
+        console.log(peticion.response)
+    } 
+}) 
+    peticion.open("GET","datos.txt") 
+    peticion.send()                        
+</textarea>
             </code>
         </div>
         <p>
@@ -195,12 +218,14 @@
         <div class="code_content">
             <h2>load</h2>
             <code>
-                const peticion = new XMLHttpRequest <br>
-                peticion.addEventListener("load",()=>{ <br>
-                    <b>console.log(peticion.response)</b> <br>
-                }) <br>
-                peticion.open("GET","datos.txt") <br>
-                peticion.send() 
+<textarea readonly class="codificacion">
+const peticion = new XMLHttpRequest 
+peticion.addEventListener("load",()=>{ 
+    console.log(peticion.response)
+}) 
+peticion.open("GET","datos.txt") 
+peticion.send()  
+</textarea>
             </code>
             <p>
                 nos mostrara el mismo resultado solo que nos evitamos las 

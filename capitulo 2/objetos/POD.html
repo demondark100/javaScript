@@ -39,46 +39,54 @@
         <h1>programacion orientado a objetos</h1>
 
         <div class="code_content">
+            <h2>pseudocodigo POD:</h2>
             <code>
-                pseudocodigo POD: <br>
-                clase nombre { <br>
-                    descripcion(objeto) { <br>
-                        <b>este.objeto = objeto,</b> <br>
-                        <b>este.objeto = objeto</b> <br>
-                    } <br>
-                }
+                <textarea readonly class="codificacion">
+clase nombre { 
+    descripcion(objeto) { 
+        este.objeto = objeto,
+        este.objeto = objeto
+    } 
+}
+                </textarea>
             </code>
         </div>
 
         <p>ahora lo haremos con javaScript real</p>
         
         <div class="code_content">
+            <h2>javaScript POD:</h2>
             <code>
-                javaScript POD: <br>
-                class Puerta { <br>
-                constructor(color,material){ <br>
-                    <b>this.color = color;</b> <br>
-                    <b>this.material = material;</b> <br>
-                    } <br>
-                }
+                <textarea readonly class="codificacion">
+class Puerta { 
+    constructor(color,material){ 
+        this.color = color;
+        this.material = material;
+    } 
+}
+                </textarea>
             </code>
         </div>
 
         <p>para poder llamar a un objeto debemos hacer una variable de respaldo</p>
 
         <div class="code_content">
+            <h2>pseudocodigo llamar:</h2>
             <code>
-                pseudocodigo llamar: <br>
-                variable = nuevo objeto(poner la descripcion del objeto)
+                <textarea readonly class="codificacion">
+variable = nuevo objeto(poner la descripcion del objeto)
+                </textarea>
             </code>
         </div>
 
         <p>ahora con sintaxis javaScript:</p>
 
         <div class="code_content">
+            <h2>javaScript llamar:</h2>
             <code>
-                javaScript llamar: <br>
-                const puerta = new Puerta("negro","madera") 
+                <textarea readonly class="codificacion">
+const puerta = new Puerta("negro","madera");
+                </textarea>
             </code>
         </div>
 
@@ -86,7 +94,9 @@
 
         <div class="code_content">
             <code>
-                console.log(puerta)
+                <textarea readonly class="codificacion">
+console.log(puerta)
+                </textarea>
             </code>
         </div>
 
@@ -94,69 +104,84 @@
         
         <div class="code_content">
             <code>
-                console.log(puerta.color); <br>
-                resultado: "negro"
+                <textarea readonly class="codificacion">
+console.log(puerta.color);
+//resultado: "negro"
+                </textarea>
             </code>
         </div>
 
         <div class="code_content">
             <code>
-                console.log(puerta.materia); <br>
-                resultado: "madera"
+                <textarea readonly class="codificacion">
+console.log(puerta.material);
+//resultado: "madera"
+                </textarea>
             </code>
         </div>
 
         <p>luego tenemos a los metodos que son igual que las funciones solo que al estar dentro de un objeto se le denomina como metodo.</p>
 
         <div class="code_content">
+            <h2>pseudocodigo metodo:</h2>
             <code>
-                pseudocodigo metodo: <br>
-                class Puerta { <br>
-                    constructor(color,material){ <br>
-                        <b>this.color = color;</b> <br>
-                        <b>this.material = material;</b> <br>
-                        } <br>
-                        nombre(parametros){ <br>
-                            <b>hacer algo</b> <br>
-                        } <br>
-                    }
+                <textarea readonly class="codificacion">
+class Puerta { 
+    constructor(color,material){ 
+        this.color = color;
+        this.material = material;
+    } 
+    nombre(parametros){ 
+        hacer algo
+    } 
+}
+                </textarea>
             </code>
         </div>
 
         <p>ahora con javaScript real:</p>
 
         <div class="code_content">
-            <p>javaScript metodo:</p>
+            <h2>javaScript metodo:</h2>
             <code>
-                class Puerta { <br>
-                    constructor(color,material){ <br>
-                        <b>this.color = color;</b> <br>
-                        <b>this.material = material;</b> <br>
-                        } <br>
-                        describir(){ <br>
-                            <b>console.log(`la puerta es de color ${this.color} y esta hecho de ${this.material}`)</b> <br>
-                        } <br>
-                    }
+                <textarea readonly class="codificacion">
+class Puerta { 
+    constructor(color,material){ 
+        this.color = color;
+        this.material = material;
+    } 
+    describir(){ 
+        console.log(`
+            la puerta es de color ${this.color} y esta hecho de ${this.material}
+        `)
+    } 
+}
+                </textarea>
             </code>
         </div>
 
         <p>para llamar a un metodo es igual a una funcion pero debemos asignarlo a un objeto.</p>
 
-        <p>pseudocodigo</p>
         <div class="code_content">
+            <h2>pseudocodigo llamar</h2>
             <code>
-                pseudocodigo llamar: <br>
-                objeto.metodo()
+                <textarea readonly class="codificacion">
+objeto.metodo()
+                </textarea>
             </code>
         </div>
 
         <p>ahora con javaScript:</p>
 
         <div class="code_content">
+            <h2>javaScript llamar:</h2>
             <code>
-                javaScript llamar: <br>
-                puerta.describir(); <br>
-                resultado: "la puerta es de color negro y esta hecho de madera"
+                <textarea readonly class="codificacion">
+const puerta = new Puerta("negro","madera")
+puerta.describir();
+//resultado: 
+//"la puerta es de color negro y esta hecho de madera"
+                </textarea>
             </code>
         </div>
 
@@ -164,124 +189,145 @@
 
         <p>erencia</p>
 
-        <p>pseudocodigo</p>
         <div class="code_content">
+            <h2>pseudocodigo erencia</h2>
             <code>
-                pseudocodigo erencia: <br>
-                clase objeto eredar objeto anterior { <br>
-                    descripcion(eredar objeto anterior y agregar cosas nuevas){ <br>
-                        <b>erencia(cosas que eredara),</b> <br>
-                        <b>hacer algo</b> <br>
-                    } <br>
-                }
+                <textarea readonly class="codificacion">
+clase objeto eredar objeto anterior { 
+    descripcion(eredar objeto anterior y agregar cosas nuevas) { 
+        erencia(cosas que eredara),
+        hacer algo
+    } 
+}
+                </textarea>
             </code>
         </div>
         
         <b>ahora con javaScript:</b>ç
         <div class="code_content">
+            <h2>javaScript erencia:</h2>
             <code>
-                javaScript erencia: <br>
-                class ventana extends Puerta { <br>
-                    constructor(color,material,forma){ <br>
-                        <b>super(color,material),</b> <br>
-                        <b>this.forma = forma</b> <br>
-                    } <br>
-                }
+                <textarea readonly class="codificacion">
+class Puerta { 
+    constructor(color,material){ 
+        this.color = color;
+        this.material = material;
+    } 
+    describir(){ 
+        console.log(`
+            la puerta es de color ${this.color} y esta hecho de ${this.material}
+        `)
+    } 
+}
+class ventana extends Puerta { 
+    constructor(color,material,forma){ 
+        super(color,material),
+        this.forma = forma
+    } 
+}
+                </textarea>
             </code>
         </div>
 
 
-        <p>metodos estaticos</p>
-        <b>pseudocodigo</b>
+        <h2>metodos estaticos</h2>
         <div class="code_content">
+            <b>pseudocodigo estatico:</b>
             <code>
-                pseudocodigo estatico: <br>
-                class objeto{ <br>
-                    constructor(color){<br>
-                        <b>this.color = color</b> <br>
-                    } <br>
-                metodo estatico descripcion(){ <br>
-                    <b>hacer algo</b> <br>
-                } <br>
-                }
+                <textarea readonly class="codificacion">
+class objeto{ 
+    constructor(color){
+        this.color = color
+    } 
+    metodo estatico descripcion(){ 
+        hacer algo
+    } 
+}
+                </textarea>
             </code>
         </div>
 
         <p>ahora con javaScript:</p>
 
         <div class="code_content">
+            <h2>javaScript estatico:</h>
             <code>
-                javaScript estatico: <br>
-                class Objeto{ <br>
-                    constructor(color){<br>
-                        <b>this.color = color</b> <br>
-                    } <br>
-                    static describir(){ <br>
-                        <b>console.log("este es un objeto de color verde")</b> <br>
-                    } <br>
-                } <br>
-                Objeto.describir()
+                <textarea readonly class="codificacion">
+class Objeto{ 
+    constructor(color){
+        this.color = color
+    } 
+    static describir(){ 
+        console.log("este es un objeto de color verde")
+    } 
+} 
+Objeto.describir();
+                </textarea>
             </code>
         </div>
 
         <p>metodos accesores</p>
 
-        <p>pseudocodigo:</p>
         <div class="code_content">
+            <h2>pseudocodigo accesores:</h2>
             <code>  
-                pseudocodigo accesores: <br>
-                class objeto { <br>
-                    constructor(material){ <br>
-                        <b>this.material = material</b> <br>
-                    } <br>
-                    cambiar nombre(parametro){ <br>
-                        <b>this.material = parametro</b> <br>
-                    } <br>
-                    acceder nombre(){ <br>
-                        <b>retornar this.material</b> <br>
-                    } <br>
-                }  
+                <textarea readonly class="codificacion">
+class objeto { 
+    constructor(material){ 
+        this.material = material
+    } 
+    cambiar nombre(parametro){ 
+        this.material = parametro
+    } 
+    acceder nombre(){ 
+        retornar this.material
+    } 
+}  
+                </textarea>
             </code>
         </div>
 
-        <p>ahora con javaScript:</p>
-
         <div class="code_content">
+            <h2>javaScript accesores:</h2>
             <code>
-                javaScript accesores: <br>
-                class Objeto{ <br>
-                    constructor(forma,material){ <br>
-                        <b>this.forma = forma</b> <br>
-                        <b>this.material = material</b> <br>
-                    } <br>
-                    set cambio(material) { <br>
-                        <b>this.material = material</b> <br> 
-                    } <br>
-                    get acceder(){ <br>
-                        <b>return this.material</b>  <br>
-                    } <br>
-                } <br>
-                const pared = new Objeto("cuadrada","madera")
+                <textarea readonly class="codificacion">
+class Objeto{ 
+    constructor(forma,material){ 
+        this.forma = forma
+        this.material = material
+    } 
+    set cambio(material) { 
+        this.material = material
+    } 
+    get acceder(){ 
+        return this.material
+    } 
+} 
+                </textarea>
             </code>
         </div>
 
         <p>llamaremos a los metodos accesores</p>
 
-        <p>pseudocodigo</p>
         <div class="code_content">
+            <h2>pseudocodigo llamar:</h2>
             <code>
-                pseudocodigo llamar: <br>
-                objeto.metodo = "nuevo valor"; <br>
-                console.log(objeto.metodo)
+                <textarea readonly class="codificacion">
+objeto.metodo = "nuevo valor";
+console.log(objeto.metodo)
+                </textarea>
             </code>
         </div>
 
         <p>ahora con javaScript</p>
         <div class="code_content">
+            <h2>javaScript llamar:</h2>
             <code>
-                javaScript llamar: <br>
-                pered.cambio = "hierro"; <br>
-                console.log(pared.acceder)
+                <textarea readonly class="codificacion">
+const pared = new Objeto("cuadrada","madera");
+pared.cambio = "hierro";
+console.log(pared.acceder)
+                </textarea>
             </code>
         </div>
 
@@ -289,37 +335,37 @@
         <p>ahora veremos todo lo aprendido:</p>
         <div class="code_content">
             <code>
-            class Objeto { <br>
-                constructor(color,material){ <br>
-                <b>this.color = color</b> <br>
-                <b>this.material = material</b> <br>
-                } <br>
-            } <br>
-            class Mesa extends Objeto{<br>
-                    constructor(material,forma){<br>
-                    <b>super(material)</b><br>
-                    <b>this.forma = forma</b><br>
-                }<br>
-                static algo(){<br>
-                    <b>console.log("xd")</b><br>
-                }<br>
-                set cambio(objeto){<br>
-                    <b>this.forma = objeto</b><br>
-                }<br>
-                get acceder(){<br>
-                    <b>return this.forma</b><br>
-                }<br>
-            }<br>
-            Mesa.algo()<br>
-            const mesa = new Mesa("madera","rectangular")<br>
-            mesa.cambio = "cuadrada" <br>
-            console.log(mesa.acceder)<br>
+                <textarea readonly class="codificacion">
+class Objeto {
+    constructor(color,material){ 
+        this.color = color
+        this.material = material
+    } 
+} 
+class Mesa extends Objeto{
+    constructor(material,forma){
+        super(material)
+        this.forma = forma
+    }
+    static algo(){
+        console.log("xd")
+    }
+    set cambio(objeto){
+        this.forma = objeto
+    }
+    get acceder(){
+        return this.forma
+    }
+}
+Mesa.algo()
+const mesa = new Mesa("madera","rectangular")
+mesa.cambio = "cuadrada" 
+console.log(mesa.acceder)
+                </textarea>
             </code>
         </div>
     </div>
 </main>
-
-
 
     <footer>
         <div class="footer_div">

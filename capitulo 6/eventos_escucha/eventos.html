@@ -39,27 +39,36 @@
     <div class="teoria">
         <h1>eventos de escucha</h1>
         <div class="code_content">
-            HTML:  <br>
-            button class="boton"> saludar /button>
+            <p>HTML:</p>
+<textarea readonly class="codificacion">
+<button class="boton"> saludar </button>
+</textarea>
         </div>
 
         <div class="code_content">
             <p>pseudocodigo: 1:</p>
             <code> 
-                elementoHTML.metodoEscucha("tipo de evento",()=>{ <br>
-                    <b>alert("hola")</b> <br>
-                })
+                <textarea readonly class="codificacion">
+elementoHTML.metodoEscucha("tipo de evento",()=>{ 
+    alert("hola")
+})
+                </textarea>
             </code>
         </div>
 
         <div class="code_content">
             <p>pseudocodigo 2:</p>
             <code>
-                elementoHTML.metodoEscucha("tipo de evento",funcionEvento); <br>
-                funcion funcionEvento(){ <br>
-                    <b>alert("hola")</b> <br>
-                    <b>elementoHTML.removerEvento("tipo de evento",funcionEvento)</b> <br>
-                }
+<textarea readonly class="codificacion">
+elementoHTML.metodoEscucha("tipo de evento",funcionEvento); 
+funcion funcionEvento(){ 
+    alert("hola");
+    elementoHTML.removerEvento(
+        "tipo de evento",
+        funcionEvento
+    );
+}
+</textarea>
             </code>
         </div>
 
@@ -68,10 +77,12 @@
                 javaScript_1:
             </p>
             <code>
-                const boton = document.querySelector(".boton"); <br>
-                boton.addEventListener("click",()=>{ <br>
-                    <b>alert("hola")</b> <br>
-                })
+                <textarea readonly class="codificacion">
+const boton = document.querySelector(".boton"); 
+boton.addEventListener("click",()=>{ 
+    alert("hola")
+})
+                </textarea>
             </code>
             <p>
                 esto nos servira para hacer un evento de escucha sirve para cualquier tipo de elemento.
@@ -81,12 +92,15 @@
         <div class="code_content">
             <p>javaScript_2:</p>
             <code>
-                const boton = document.querySelector(".boton"); <br>
-                boton.addEventListener("click",saludo)
-                function saludo(){ <br>
-                    <b>alert("hola");</b> <br>
-                    <b>boton.removeEventListener("click",saludo)</b> <br>
-                }
+                <textarea readonly class="codificacion">
+const boton = document.querySelector(".boton"); 
+boton.addEventListener("click",saludo);
+
+function saludo(){ 
+    alert("hola");
+    boton.removeEventListener("click",saludo)
+}
+                </textarea>
             </code>
             <p>
                 de esta manera podemos remover un elemento una vez se haya ejecutado.

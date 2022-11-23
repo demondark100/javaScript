@@ -41,11 +41,13 @@
         <p>estos son como los objetos solo que se le agregan comillas.</p>
         <div class="code_content">
             <code>
-                const objeto = { <br>
-                    <b>"nombre": "puerta",</b> <br>
-                    <b>"forma": "cuadrada",</b> <br>
-                    <b>"colo": "cafe"</b> <br>
-                }
+<textarea readonly class="codificacion">
+const objeto = { 
+    "nombre": "puerta",
+    "forma": "cuadrada",
+    "colo": "cafe"
+}    
+</textarea>
             </code>
         </div>
         <p>
@@ -55,13 +57,15 @@
 
         <div class="code_content">
             <code>
-                const objeto = { <br>
-                    <b>"nombre": "puerta",</b> <br>
-                    <b>"forma": "cuadrada",</b> <br>
-                    <b>"colo": "cafe"</b> <br>
-                } <br>
-                console.log(objeto.nombre); <br>
-                console.log(objeto["nombre"]);
+<textarea readonly class="codificacion">
+const objeto = { 
+    "nombre": "puerta",
+    "forma": "cuadrada",
+    "colo": "cafe"
+} 
+console.log(objeto.nombre); 
+console.log(objeto["nombre"]);             
+</textarea>
             </code>
         </div>
 
@@ -73,15 +77,21 @@
         <p>serializar:</p>
         <div class="code_content">
             <code>
-                const objeto = { <br>
-                    <b>"nombre": "puerta",</b> <br>
-                    <b>"forma": "cuadrada",</b> <br>
-                    <b>"colo": "cafe"</b> <br>
-                } <br>
-                JSON.stringify(objeto) <br>
-                console.log(JSON.stringify(objeto)); <br> <br>
-                <p>resultado:</p>
-                {"nombre":"puerta","forma":"cuadrada","colo":"cafe"}
+<textarea readonly class="codificacion">
+const objeto = { 
+    "nombre": "puerta",
+    "forma": "cuadrada",
+    "colo": "cafe"
+} 
+JSON.stringify(objeto) 
+console.log(JSON.stringify(objeto)); 
+//resultado:
+//{
+    //"nombre":"puerta",
+    //"forma":"cuadrada",
+    //"colo":"cafe"
+//}
+</textarea>
             </code>
             <p>
                 con "JSON.stringify()" podemos serializar osea convertir al objeto json 
@@ -94,7 +104,13 @@
         </p>
         <div class="code_content">
             <code>
-                {"nombre":"puerta","forma":"cuadrada","colo":"cafe"}
+<textarea readonly class="codificacion">
+{
+    "nombre":"puerta",
+    "forma":"cuadrada",
+    "colo":"cafe"
+    }
+</textarea>
             </code>
         </div>
         <p>
@@ -103,13 +119,15 @@
         </p>
         <div class="code_content">
             <code>
-                const objeto = { <br>
-                    <b>"nombre": "puerta",</b> <br>
-                    <b>"forma": "cuadrada",</b> <br>
-                    <b>"colo": "cafe"</b> <br>
-                } <br>
-                let objetSerializado = JSON.stringify(objeto) <br>
-                console.log(JSON.parse(objetSerializado)); <br>
+<textarea readonly class="codificacion">
+const objeto = { 
+    "nombre": "a",
+    "forma": "a",
+    "colo": "cafe"
+} 
+let objetSerializado = JSON.stringify(objeto) 
+console.log(JSON.parse(objetSerializado));                         
+</textarea>
             </code>
             <p>
                 con "JSON.parse()" podemos descerializar los objetos para tranajar con 

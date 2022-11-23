@@ -49,7 +49,7 @@
             <code>
                 artista = "Coldplay";
             </code>
-            <p>j
+            <p>
                 javaScript lo admite y el navegador le pone por defecto la palabra clave "var".
                 En el modo estricto esto no es permitido ya que el desarrollador debe elegir con que crear la variable con "var", "let" o "const".
             </p>
@@ -61,8 +61,10 @@
         </p>
         <div class="code_content">
             <code>
-                "use strict"; <br>
-                todo el codigo que se escribira.
+<textarea readonly class="codificacion">
+"use strict";
+todo el codigo que se escribira.              
+</textarea>
             </code>
         </div>
 
@@ -75,8 +77,10 @@
                 sin "use strict";
             </h2>
             <code>
-                fruta = "naranja"; <br>
-                console.log(fruta)
+<textarea readonly class="codificacion">
+fruta = "naranja";
+console.log(fruta)                    
+</textarea>
             </code>
             <p>
                 la variable fruta no la declaramos pero javaScript lo admite y el navegador le pone "var" por defecto.
@@ -89,13 +93,27 @@
                     con "use strict";
                 </h2>
                 <code>
-                    "use strict"; <br>
-                    fruta = "naranja"; <br>
-                    console.log(fruta)
+                    <p>error</p>
+<textarea readonly class="codificacion">
+"use strict"; 
+fruta = "naranja"; 
+console.log(fruta)                 
+</textarea>
                 </code>
                 <p>
                     esto nos dira "la variable fruta no ha sido declarada", <br>
                     por eso el desarrolador debe usar las palabras clave de las variables.
+                </p>
+            </code>
+            <p>correcto</p>
+            <code>
+<textarea readonly class="codificacion">
+"use strict"; 
+let fruta = "naranja"; 
+console.log(fruta)                 
+</textarea>
+                <p>
+                    esto ya no dira que hay errores porque nosotros elegimos con que pañabra clave inicializamos la variable.
                 </p>
             </code>
         </div>
@@ -109,12 +127,14 @@
                 sin "use strict";
             </h2>
             <code>
-                const objeto = { <br>
-                    <b>color: "verde"</b> <br>
-                }; <br>
-                Object.defineProperty(objeto, "color" , {value: "verde", writable: false}); <br>
-                objeto.color = "azul" <br>
-                console.log(objeto) 
+<textarea readonly class="codificacion">
+const objeto = { 
+    color: "verde"
+}; 
+Object.defineProperty(objeto, "color" , {value: "verde", writable: false}); 
+objeto.color = "azul" 
+console.log(objeto)                  
+</textarea>
             </code>
             <p>
                 esto no cambiara su valor pero tampoco nos notificara que hubo un error ya que no se puede reescribir esa propiedad.
@@ -127,13 +147,15 @@
                     con "use strict";
                 </h2>
                 <code>
-                    "use strict"; <br>
-                    const objeto = { <br>
-                        <b>color: "verde"</b> <br>
-                    }; <br>
-                    Object.defineProperty(objeto, "color" , {value: "verde", writable: false}); <br>
-                    objeto.color = "azul" <br>
-                    console.log(objeto) 
+<textarea readonly class="codificacion">
+"use strict"; 
+const objeto = { 
+    color: "verde"
+}; 
+Object.defineProperty(objeto, "color" , {value: "verde", writable: false}); 
+objeto.color = "azul" 
+console.log(objeto)                  
+</textarea>
                 </code>
                 <p>
                     esto aparte de no cambiar la propiedad nos notificara con un error que esa propiedad del objeto no se puede cambiar.
@@ -150,11 +172,13 @@
                 sin "use strict"
             </h2>
             <code>
-                const obj = { <br>
-                    <b>juego: "left 4 dead 2"</b> <br>
-                } <br>
-                Object.preventExtensions(obj) <br>
-                obj.desarrollador =  "valve" <br>
+<textarea readonly class="codificacion">
+const obj = { 
+    juego: "left 4 dead 2"
+} 
+Object.preventExtensions(obj) 
+obj.desarrollador =  "valve"             
+</textarea>
             </code>
             <p>
                 sin "use strict" si tratamos de acceder a la propiedad "desarrolador" solo nos dira undefined pero no notificara el error ya que "preventExtensions" no permite agregar mas propiedades al objeto.
@@ -164,12 +188,14 @@
         <div class="code_content">
             <h2>con  "use strict"</h2>
             <code>
-                "use strict"; <br>
-                const obj = { <br>
-                    <b>juego: "left 4 dead 2"</b> <br>
-                } <br>
-                Object.preventExtensions(obj) <br>
-                obj.desarrollador =  "valve" <br>
+<textarea readonly class="codificacion">
+"use strict"; 
+const obj = { 
+    juego: "left 4 dead 2"
+} 
+Object.preventExtensions(obj) 
+obj.desarrollador =  "valve"            
+</textarea>
             </code>
             <p>
                 con "use strict" si nos notificara que no se pueden agregar mas propiedades a un objeto.

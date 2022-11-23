@@ -40,13 +40,17 @@
             <b>iniciamos:</b>
             <div class="code_content">
                 <code>
-                    <p>
-                        let cadena = "hola mundo"
-                    </p>
-                    cadena.startsWith("h") <br>
-                    resultado: true <br> 
-                    cadena.startsWith("a") <br>
-                    resultado: false <br>
+                    <textarea readonly class="codificacion">
+let cadena = "hola mundo";
+cadena.startsWith("h");
+
+//resultado: true 
+
+let cadena = "hola mundo";
+cadena.startsWith("a");
+
+//resultado: false;
+                    </textarea>
                     <p>
                         esto nos servira para saber si una cadena inicia con un caracter en especifico
                     </p>
@@ -55,85 +59,133 @@
 
             <div class="code_content">
                 <code>
+                    <textarea readonly class="codificacion">
+let cadena = "mundo";
+cadena.endsWith("o"); 
+
+//resultado: true 
+
+let cadena = "mundo";
+cadena.endsWith("e"); 
+
+//resultado: false 
+                    </textarea>
                     <p>
-                        let cadena = "mundo"
+                        esto nos servira para saber si una cadena finaliza con algun caracter en especifico.
                     </p>
-                    cadena.endsWith("o"); <br>
-                    resultado: true <br>
-                    cadena.endsWith("e"); <br>
-                    resultado: false <br> 
-                    <p>esto nos servira para saber si una cadena finaliza con algun caracter en especifico.</p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    <p>let cadena = "hola mundo XD";</p>
-                    cadena.includes("l") <br>
-                    resultado: true <br>
-                    cadena.includes("z") <br>
-                    resultado: false
-                    <p>esto nos servira para saber si una cadena contiene un caracter en especifico a diferencia de las dos primeras a este no le importara la posision.</p>
+                    <textarea readonly class="codificacion">
+let cadena = "hola mundo XD";
+cadena.includes("l");
+
+//resultado: true
+
+let cadena = "hola mundo XD";
+cadena.includes("z");
+
+//resultado: false
+                    </textarea>
+                    <p>
+                        esto nos servira para saber si una cadena contiene un caracter en especifico a diferencia de las dos primeras a este no le importara la posision.
+                    </p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
+                    <textarea readonly class="codificacion">
+let cadena = "hola mundo";
+cadena.indexOf("a");
+//resultado: 3
+                    </textarea>
                     <p>
-                        let cadena = "hola mundo";
+                        esto nos mostrara la posision de un caracter en especifico
                     </p>
-                    cadena.indexOf("a") <br>
-                    resultado: 3
-                    <p>esto nos mostrara la posision de un caracter en especifico</p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
+                    <textarea readonly class="codificacion">
+let cadena = "vivir es vida";
+cadena.lastIndexOf("v");
+//resultado: 9 
+                    </textarea>
                     <p>
-                        let cadena = "vivir es vida";
+                        esto nos servira para saber la ultima posision de un caracter en especifico.
                     </p>
-                    cadena.lastIndexOf("v") <br>
-                    resultado: 9 
-                    <p>esto nos servira para saber la ultima posision de un caracter en especifico.</p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
+                    <textarea readonly class="codificacion">
+let cadena = "no se encontrara un caracter.";
+if (cadena.indexOf("@") == -1) {
+    console.log("el caracter @ no existe")
+} else{
+    console.log(cadena.indexOf("6"))
+}
+                    </textarea>
+                </code>
+                <p>
+                    si la posision del caracter que queremos no existe sera -1.
+                </p>
+            </div>
+
+            <div class="code_content">
+                <p>pseudocodigo:</p>
+                <code>
+                    <textarea readonly class="codificacion">
+variable.metodo ( 
+    parametro 1 longitud de cadena ,
+    parametro 2 cadena que queremos poner
+);
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+let cadena = "123";
+cadena.padStart(4,0) 
+resultado: 0123 
+                    </textarea>
                     <p>
-                        let cadena = "123";
+                        esto nos servira para rellenar una cadena al imicio
                     </p>
-                    pseudocodigo: <br>
-                    variable.metodo ( parametro 1 longitud de cadena , parametro 2 cadena que queremos poner ); <br> <br>
-                    javaScript: <br>
-                    cadena.padStart(4,0) <br>
-                    resultado: 0123 
-                    <p>esto nos servira para rellenar una cadena al imicio</p>
                 </code> 
             </div>
 
             <div class="code_content">
                 <code>
+                    <p>pseudocodigo:</p>
+                    <textarea readonly class="codificacion">
+variable.metodo ( 
+    parametro 1 longitud , 
+    parametro 2 cadena que queremos poner al final
+); 
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+let cadena = "123"; 
+cadena.padEnd(4,4) 
+resultado: "1234"
+                    </textarea>
                     <p>
-                        let cadena = "123";
+                        esto nos servira para rellenar una cadena al final.
                     </p>
-                    pseudocodigo: <br>
-                    variable.metodo ( parametro 1 longitud , parametro 2 cadena que queremos poner al final ); <br> <br>
-                    javaScript: <br>
-                    cadena.padEnd(4,4) <br>
-                    resultado: "1234"
-                    <p>esto nos servira para rellenar una cadena al final.</p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    <p>
-                        let cadena = "hola";
-                    </p>
-                    cadena.repeat(3) <br>
-                    resultado: "hola","hola","hola"
+                    <textarea readonly class="codificacion">
+let cadena = "hola";
+cadena.repeat(3);
+//resultado: "hola","hola","hola"
+                    </textarea>
                     <p>
                         esto nos servira para que el contenido de una cadena de texto se repita cuantas veces queramos
                     </p>
@@ -142,41 +194,48 @@
             
             <div class="code_content">
                 <code>
+                    <textarea readonly class="codificacion">
+let cadena = "hola mundo";
+cadena.split(" ");
+//resultado: ["hola","mundo"]
+                    </textarea>
                     <p>
-                        let cadena = "hola mundo";
+                        esto nos servira para separar una cadena y se convertira en un arreglo
                     </p>
-                    cadena.split(" "); <br>
-                    resultado: ["hola","mundo"]
-                    <p>esto nos servira para separar una cadena y se convertira en un arreglo</p>
                 </code>
             </div>
             
             <div class="code_content">
+                <p>pseudocodigo:</p>
                 <code>
+                    <textarea readonly class="codificacion">
+crear_variable = variable.metodo ( 
+    parametro 1 desde donde inicia , 
+    parametro 2 hasta donde finaliza y no cuenta el ultimo numero 
+);
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+let cadena = "hola mundo";
+let subCadena = cadena.substring(5,10);
+console.log(subCadena);
+//resultado: "mundo"
+                    </textarea>
                     <p>
-                        let cadena = "hola mundo";
+                        esto nos servira para crear una subcadena a diferencia de los otros metodos esto si necesita una variable de respaldo para que pueda guardar la nueva cadena de texto.
                     </p>
-                    pseudocodigo: <br>
-                    crear_variable = variable.metodo ( parametro 1 desde donde inicia , parametro 2 hasta donde finaliza y no cuenta el ultimo numero ); <br>
-                    <br>
-                    javaScript:
-
-                    <p>
-                        let subCadena = cadena.substring(5,10);
-                    </p>
-                    resultado: "mundo"
-                    <p>esto nos servira para crear una subcadena a diferencia de los otros metodos esto si necesita una variable de respaldo para que pueda guardar la nueva cadena de texto.</p>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    <p>
-                        cadena.toUpperCase();
-                    </p>
-                    <p>
-                        cadena.toLoweCase();
-                    </p>
+                    <textarea readonly class="codificacion">
+let cadena1 = "hola mundo";
+console.log(cadena1.toUpperCase());
+
+let cadena2 = "HOLA MUNDO";
+console.log(cadena2.toLowerCase())
+                    </textarea>
                     <p>
                         esto nos servira para convertir una cadena de texto a mayuscula o minuscula
                     </p>
@@ -189,22 +248,24 @@
 
             <div class="code_content">
                 <code>
-                    <p>
-                        let cadena = 123;
-                    </p>
-                    cadena.toString() <br>
-                    resultado: "123"
-                    <p>esto nos servira para convertir cualquier dato a una cadena de texto</p>
+                    <textarea readonly class="codificacion">
+let cadena = 123;
+cadena.toString();
+//resultado: "123"
+                    </textarea>
                 </code>
+                <p>
+                    esto nos servira para convertir cualquier dato a una cadena de texto
+                </p>
             </div>
 
             <div class="code_content">
                 <code>
-                    <p>
-                        let cadena = " hola mundo ";
-                    </p>
-                    cadena.trim(); <br>
-                    resultado: "hola mundo"
+                    <textarea readonly class="codificacion">
+let cadena = " hola mundo ";
+cadena.trim();
+//resultado: "hola mundo"
+                    </textarea>
                     <p>
                         esto nos servira para quitar los espacios al principio y al final de una cadena de texto.
                     </p>
@@ -225,6 +286,6 @@
 </footer>
 
 
-<script src="metodos_cad.js"></script>
+<script src="metodos_cad.js"></>
 </body>
 </html>

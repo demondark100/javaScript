@@ -76,19 +76,21 @@
                 error:
             </h2>
             <code>
-                //"use strict"; <br>
-                //primero ejecuta esto sin "use strict" luego descomenta la linea que dice "use strict"</br> <br>
+<textarea readonly class="codificacion">
+//"use strict"; 
+//primero ejecuta esto sin "use strict" luego descomenta la linea que dice "use strict"
 
 
-                // window.nombre = prompt("nombre"); <br>
-                //this.nombre = prompt("nombre"); <br>
-                // this y window son lo mismo por eso ambas opciones de arriba son validas. <br> br
+// window.nombre = prompt("nombre"); 
+//this.nombre = prompt("nombre"); 
+// this y window son lo mismo por eso ambas opciones de arriba son validas.
 
-                function mostrar(){ <br> 
-                    <b>console.log(`hola ${this.nombre}`)</b> <br>
-                } <br> <br>
-                mostrar() <br>
-                resultado: "hola nombre de usuario"
+function mostrar(){ 
+    console.log(`hola ${this.nombre}`)
+} 
+mostrar() 
+//resultado: "hola nombre de usuario"                  
+</textarea>
             </code>
             <p>
                 este this hace referencia al objeto window de afuera pero es erroneo ya qye this debe hacer referencia a un objeto por eso si usamos "use strict" esto directamente no se ejecutara.
@@ -97,17 +99,19 @@
 
         <div class="code_content">
             <code>
-                "use strict"; <br>
-                function mostrar(){ <br>
-                    <b>console.log(`hola ${this.nombre}`)</b> <br>
-                } <br>
-                <br>
-                const objeto = { <br>
-                    <b>nombre: prompt("nombre"),</b> <br>
-                    <b>mostrar</b> <br>
-                } <br>
-                <br>
-                objeto.mostrar()
+<textarea readonly class="codificacion">
+"use strict"; 
+function mostrar(){ 
+    console.log(`hola ${this.nombre}`)
+} 
+    
+const objeto = { 
+    nombre: prompt("nombre"),
+    mostrar
+} 
+    
+objeto.mostrar()                 
+</textarea>
             </code>
             <p>
                 esto es correcto porque la funcion esta haciendo referencia al objeto que tiene como estencion nombre.

@@ -46,31 +46,35 @@
         </p>
         <div class="code_content">
             <code>
-                const llamar=()=>{ <br>
-                    <b>llamar()</b> <br>
-                } <br>
-                //llamar() <br>
-                //por favor no copiar se hara un bucle infinito.
+<textarea readonly class="codificacion">
+const llamar=()=>{ 
+    llamar() 
+} 
+//llamar() 
+//por favor no descomentar esta linea se hara un bucle infinito :v.       
+</textarea>
             </code>
         </div>
 
 
         <div class="code_content">
             <code>
-                const validarEdad = (err) => { <br>
-                    let edad; <br>
-                    try { <br>
-                        <b>if (err) edad = prompt("pon una edad valida");</b> <br>
-                        <b>else edad = prompt("introduce tu edad");</b> <br>
-                        <b>edad = parseInt(edad);</b> <br>
-                        <b>if(isNaN(edad)) throw "introduce tu edad";</b> <br>
-                        <b>if(edad > 18) console.log("eres mayor de edad")</b> <br>
-                        <b>else console.log("no eres mayor de edad")</b> <br>
-                    } catch (error) { <br>
-                        <b>validarEdad(error)</b> <br>
-                    } <br>
-                } <br>
-                validarEdad()
+<textarea readonly class="codificacion">
+const validarEdad = (err) => { 
+    let edad; 
+    try { 
+        if (err) edad = prompt("pon una edad valida");
+        else edad = prompt("introduce tu edad");
+        edad = parseInt(edad);
+        if(isNaN(edad)) throw "introduce tu edad";
+        if(edad > 18) console.log("eres mayor de edad")
+        else console.log("no eres mayor de edad")
+    } catch (error) { 
+        validarEdad(error)
+    } 
+} 
+validarEdad()                 
+</textarea>
             </code>
         </div>
     </div>

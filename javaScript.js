@@ -1,19 +1,16 @@
+const javaScript = document.querySelector(".javaScript")
+
 let menu = document.querySelector(".menu")
 menu.addEventListener("click",()=>{
     const menu_nav = document.querySelector(".menu_nav")
     menu_nav.classList.toggle("mover")
     let main = document.querySelector("main")
-    main.classList.toggle("mover_content")
+    javaScript.classList.toggle("javaScript__")
 })
 
 
 
-let li_nav_4 = document.querySelector(".li_nav-4")
-li_nav_4.addEventListener("click",()=>{
-    let hacking = document.querySelector(".hacking")
-    hacking.classList.add("hacking_style")
-    hacking.textContent = "aprendiendo"
-}) 
-
-
-
+const capitulos_content = document.querySelector(".capitulos_content")
+const icono = document.querySelector(".icono").addEventListener("click",()=>{
+    capitulos_content.classList.toggle("moverOpciones");
+})

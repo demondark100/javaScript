@@ -43,24 +43,28 @@
                 pseudocodigo_1:
             </p>
             <code>
-                variable = crear promesa((resolver,rechazar)=>{ <br>
-                    <b>resolver("dar un mensaje o hacer algo");</b> <br>
-                    <b>rechazar("dar un mensaje o hacer algo");</b> <br>
-                })
+<textarea readonly class="codificacion">
+variable = crear promesa((resolver,rechazar)=>{ 
+    resolver("dar un mensaje o hacer algo");
+    rechazar("dar un mensaje o hacer algo");
+})
+</textarea>                
             </code>
         </div>
 
         <div class="code_content">
             <p>javaScript:</p>
             <code>
-                let music = "Make you mine"; <br> <br>
-                const promesa = new Promise((resolve,reject)=>{ <br>
-                    if(music == "Make you mine"){ <br>
-                        <b>resolve("esta musica es muy buena")</b> <br>
-                    } else{ <br>
-                        <b>reject("no conozco esta musica lo siento")</b> <br>
-                    } <br>
-                })
+<textarea readonly class="codificacion">
+let music = "Make you mine"; 
+const promesa = new Promise((resolve,reject)=>{ 
+    if(music == "Make you mine"){ 
+        resolve("esta musica es muy buena")
+    } else{ 
+        reject("no conozco esta musica lo siento")
+    } 
+})      
+</textarea>
             </code>
         </div>
 
@@ -69,36 +73,39 @@
         <div class="code_content">
             <p>pseudocodigo:</p>
             <code>
-                const promesa = new Promise((resolve,reject)=>{ <br>
-                    if(music == "Make you mine"){ <br>
-                        <b>resolve("esta musica es muy buena")</b> <br>
-                    } else{ <br>
-                        <b>reject("no conozco esta musica lo siento")</b> <br>
-                    } <br>
-                }).mostrar resolver ((callback / parametro)=>{ <br>
-                    <b>mostrar parametro</b> <br>
-                }). mostrar rechazo ((callback / parametro)=>{ <br>
-                    <b>mostrar parametro</b> <br>
-                })
+<textarea readonly class="codificacion">
+const promesa = new Promise((resolve,reject)=>{ 
+    if(music == "Make you mine"){ 
+        resolve("esta musica es muy buena")
+    } else{ 
+        reject("no conozco esta musica lo siento")
+    } 
+    }).mostrar resolver ((callback / parametro)=>{ 
+        mostrar parametro
+    }). mostrar rechazo ((callback / parametro)=>{ 
+        mostrar parametro
+    })                        
+</textarea>
             </code>
         </div>
 
         <div class="code_content">
             <p>javaScript:</p>
             <code>
-                let music = prompt("introduce una musica"); <br><br>
-
-                const promesa = new Promise((resolve,reject)=>{<br>
-                    if(music == "Make you mine"){<br>
-                        <b>resolve("esta musica es muy buena")</b><br>
-                    } else{<br>
-                        <b>reject("no conozco esta musica lo siento")</b><br>
-                    }<br>
-                }).then((mostrar_1)=>{<br>
-                    <b>console.log(mostrar_1)</b><br>
-                }).catch((error_2)=>{<br>
-                    <b>console.log(error_2)</b><br>
-                })
+<textarea readonly class="codificacion">
+let music = prompt("introduce una musica");
+const promesa = new Promise((resolve,reject)=>{
+    if(music == "Make you mine"){
+        resolve("esta musica es muy buena")
+    } else{
+        reject("no conozco esta musica lo siento")
+    }
+}).then((mostrar_1)=>{
+    console.log(mostrar_1)
+}).catch((error_2)=>{
+    console.log(error_2)
+})   
+</textarea>
             </code>
         </div>
         <p>
@@ -108,17 +115,18 @@
         <div class="code_content">
             <p>javaScript:</p>
             <code>
-                let music = prompt("introduce una musica"); <br> <br>
-
-                const promesa = new Promise((resolve,reject)=>{<br>
-                    if(music == "Make you mine"){ <br>
-                        <b>resolve("esta musica es muy buena")</b> <br>
-                    } else{<br>
-                        <b>reject("no conozco esta musica lo siento")</b> <br>
-                    }<br>
-                })<br>
-                    <b>.then(mostrar=>{console.log(mostrar)</b> <br>
-                    <b>}).catch(error=>{console.log(error)})</b> 
+<textarea readonly class="codificacion">
+let music = prompt("introduce una musica");
+const promesa = new Promise((resolve,reject)=>{
+    if(music == "Make you mine"){ 
+        resolve("esta musica es muy buena")
+    } else{
+        reject("no conozco esta musica lo siento")
+    }
+})
+    .then(mostrar=>{console.log(mostrar)
+    }).catch(error=>{console.log(error)})         
+</textarea>
             </code>
         </div>
     </div>

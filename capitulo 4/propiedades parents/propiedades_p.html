@@ -42,21 +42,23 @@
             <h1>propiedades parents</h1>
             <div class="code_content">
                 <code>
-                    HTML: <br>
-                    div class="content"> <br>
-                        p class="a_1"> algo xd /p> <br>
-                        p class="a_2"> algo xd /p> <br>
-                        p class="a_3"> algo xd /p> <br> 
-                    /div> <br>
-                    javaScript: <br>
-                    const content = document.querySelector(".content"); <br>
-                    const a_1 = document.querySelector(".a_1"); <br>
-                    const a_2 = document.querySelector(".a_2"); <br>
-                    const a_3 = document.querySelector(".a_3"); <br> 
-                    <p>
-                        a_1.parentElemet; <br>
-                    a_2.parentNode;
-                    </p>
+                    <p>HTML:</p>
+                    <textarea readonly class="codificacion">
+<div class="content"> 
+    <p class="a_1"> algo xd </p> 
+    <p class="a_2"> algo xd </p> 
+    <p class="a_3"> algo xd </p> 
+</div>
+                    </textarea>
+                    <p>javaScript:</p>
+                    <textarea readonly class="codificacion">
+const content = document.querySelector(".content"); 
+const a_1 = document.querySelector(".a_1"); 
+const a_2 = document.querySelector(".a_2"); 
+const a_3 = document.querySelector(".a_3");
+a_1.parentElemet; 
+a_2.parentNode;
+                    </textarea>
                 </code>
                 <p>
                     con "parentElemet" y "parentNode" nos mostrara los elementos padres o contenedores que esta ensima de esos elementos.

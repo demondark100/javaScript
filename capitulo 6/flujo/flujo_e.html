@@ -43,41 +43,46 @@
         <div class="code_content">
             <code>
                 <p>HTML:</p>
-                div class="content_1"> <br>
-                    <b>div class="content_2"></b> <br>
-                        <b>button class="boton"> click /button></b> <br>
-                    <b>/div></b><br>
-                /div> <br>
-                <br>
+                <textarea readonly class="codificacion">
+<div class="content_1"> 
+    <div class="content_2">
+        <button class="boton"> click </button>
+    </div>
+</div> 
+                </textarea>
                 <p>css:</p>
-                .content_1{ <br>
-                    <b>width: 250px;</b><br>
-                    <b>height: 110px;</b><br>
-                    <b>background-color: #0f0;</b><br>
-                }<br>
-                .content_2{<br>
-                    <b>background-color: #f00;</b><br>
-                    <b>width: 150px;</b><br>
-                    <b>height: 85px;</b><br>
-                    <b>margin: auto;</b><br>
-                }<br>
-                .boton{<br>
-                    <b>background-color: #00f;</b><br>
-                    <b>color: #fff;</b><br>
-                }<br>
+<textarea readonly class="codificacion">
+.content_1{ 
+    width: 250px;
+    height: 110px;
+    background-color: #0f0;
+}
+.content_2{
+    background-color: #f00;
+    width: 150px;
+    height: 85px;
+    margin: auto;
+}
+.boton{
+    background-color: #00f;
+    color: #fff;
+}
+</textarea>
                 <p>javaScript:</p>
-                const content_1 = document.querySelector(".content_1");<br>
-                const content_2 = document.querySelector(".content_2");<br>
-                const boton = document.querySelector(".boton");<br>
-                content_1.addEventListener("click",()=>{<br>
-                    <b>alert("content_1");</b><br>
-                });<br>
-                content_2.addEventListener("click",()=>{<br>
-                    <b>alert("content_2");</b><br>
-                });<br>
-                boton.addEventListener("click",()=>{<br>
-                    <b>alert("click");</b><br>
-                });<br>
+<textarea readonly class="codificacion">
+const content_1 = document.querySelector(".content_1");
+const content_2 = document.querySelector(".content_2");
+const boton = document.querySelector(".boton");
+content_1.addEventListener("click",()=>{
+    alert("content_1");
+});
+content_2.addEventListener("click",()=>{
+    alert("content_2");
+});
+boton.addEventListener("click",()=>{
+    alert("click");
+});
+</textarea>
             </code>
         </div>
 
@@ -94,18 +99,20 @@
         <div class="code_content">
             <p>javaScript:</p>
             <code>
-                const content_1 = document.querySelector(".content_1");<br>
-                const content_2 = document.querySelector(".content_2");<br>
-                const boton = document.querySelector(".boton");<br>
-                content_1.addEventListener("click",()=>{<br>
-                    <b>alert("content_1");</b><br>
-                });<br>
-                content_2.addEventListener("click",()=>{<br>
-                    <b>alert("content_2");</b><br>
-                },true);<br>
-                boton.addEventListener("click",()=>{<br>
-                    <b>alert("click");</b><br>
-                });<br>
+<textarea readonly class="codificacion">
+const content_1 = document.querySelector(".content_1");
+const content_2 = document.querySelector(".content_2");
+const boton = document.querySelector(".boton");
+content_1.addEventListener("click",()=>{
+    alert("content_1");
+});
+content_2.addEventListener("click",()=>{
+    alert("content_2");
+},true);
+boton.addEventListener("click",()=>{
+    alert("click");
+});
+</textarea>
                 <p>
                     con "true" manejaremos el flujo de los eventos en este caso "content_2" se ejecutara primero
                 </p>
@@ -126,19 +133,21 @@
         <div class="code_content">
             <p>javaScript:</p>
             <code>
-                const content_1 = document.querySelector(".content_1");<br>
-                const content_2 = document.querySelector(".content_2");<br>
-                const boton = document.querySelector(".boton");<br>
-                content_1.addEventListener("click",()=>{<br>
-                    <b>alert("content_1");</b><br>
-                });<br>
-                content_2.addEventListener("click",()=>{<br>
-                    <b>alert("content_2");</b><br>
-                });<br>
-                boton.addEventListener("click",(e)=>{<br>
-                    <b>alert("click");</b><br>
-                    <b>e.stopPropagation();</b> <br>
-                });<br>
+<textarea readonly class="codificacion">
+const content_1 = document.querySelector(".content_1");
+const content_2 = document.querySelector(".content_2");
+const boton = document.querySelector(".boton");
+content_1.addEventListener("click",()=>{
+    alert("content_1");
+});
+content_2.addEventListener("click",()=>{
+    alert("content_2");
+});
+boton.addEventListener("click",(e)=>{
+    alert("click");
+    e.stopPropagation();
+});
+</textarea>
             </code>
             <p>
                 con "stopPropagation()" vamos a detener la propagacion de los eventos.
@@ -153,10 +162,6 @@
         </div>
     </div>
 </main>
-
-
-
-
 
 
 <footer>

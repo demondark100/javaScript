@@ -43,30 +43,38 @@
             </p>
             <div class="code_content">
                 <code>
-                    pseudocodigo: <br>
-                    variable = { <br>
-                        <b>nombre: contenido,</b> <br>
-                        <b>nombre: contenido,</b> <br>
-                        <b>nombre: contenido</b>  <br>
-                    }  <br>
-    
-                    console.log(objeto.nombre); <br>
-                    console.log(objeto["nombre"])
+                    <p>pseudocodigo: </p>
+<textarea readonly class="codificacion">
+variable = { 
+    nombre: contenido,
+    nombre: contenido,
+    nombre: contenido<
+}  
+
+//forma de llamar 1:
+console.log(objeto.nombre); 
+//forma de llamar 2:
+console.log(objeto["nombre"])
+</textarea>
                 </code>
             </div>
 
             <div class="code_content">
                 <code>
-                    javaScript: <br>
-                    let personas = { <br> 
-                        <b>nombre: "Pepe",</b> <br>
-                        <b>apellido: "Gonzales",</b> <br>
-                        <b>correo: "pepe@gmail.com"</b> <br>
-                    } <br>
-                    console.log(personas.nombre); <br>
-                    resultado: "Pepe". <br>
-                    console.log(personas["apellido"]); <br>
-                    resultado: "Gonzales"
+                    <p>javaScript:</p>
+<textarea readonly class="codificacion">
+let personas = { 
+    nombre: "Pepe",
+    apellido: "Gonzales",
+    correo: "pepe@gmail.com"
+} ;
+console.log(personas.nombre); 
+//resultado: "Pepe"
+console.log(personas["apellido"]); 
+//resultado: "Gonzales"
+console.log(personas.correo); 
+//resultado: "pepe@gmail.com"
+</textarea>
                 </code>
             </div>
 
@@ -74,58 +82,108 @@
                 <p>
                     pseudocodigo:
                 </p>
+                <p>
+                    esto sera para crear propiedades nuevas a un objeto.
+                </p>
                 <code>
-                    Object.defineProperty( objeto, "propiedad" , { valor: "valor" })
+<textarea readonly class="codificacion">
+Object.defineProperty( 
+    objeto, "propiedad" , 
+    { valor: "valor" }
+)
+</textarea>
                 </code>
                 <p>
                     javaScript:
                 </p>
                 <code>
-                    const objeto = {}; <br>
-                    Object.defineProperty(objeto, "color" , {value: "verde"});
+<textarea readonly class="codificacion">
+const objeto = {};
+Object.defineProperty(
+    objeto, "color" , 
+    {value: "verde"}
+);
+</textarea>
                 </code>
                 <p>
-                    esto sera para crear propiedades nuevas a un objeto.
+                    tambien podemos agregar propiedades de esta manera.
                 </p>
+                <code>
+<textarea readonly class="codificacion">
+const agregar = {
+    agregar1: 1,
+    agregar2: 2
+}    
+agregar.agregar3 = 3
+console.log(agregar)
+</textarea>
+                </code>
             </div>
 
             <div class="code_content">
+                <p>
+                    de esta manera podemos cambiar el valor de una propiedad.
+                </p>
                 <code>
-                    const objeto = {};
-                    Object.defineProperty(objeto, "color" , {value: "verde", writable: false});
-                    console.log(objeto)
+<textarea readonly class="codificacion">
+const agregar = {
+    agregar1: 1,
+    agregar2: 2
+};
+agregar.agregar2 = 8;
+console.log(agregar);
+</textarea>
                 </code>
+            </div>
+
+            <div class="code_content">
                 <p>
                     con "writable: false" estamos diciendo que esa propiedad no se puede reescribir.
                 </p>
+                <code>
+<textarea readonly class="codificacion">
+const objeto = {};
+Object.defineProperty(
+    objeto, "color",
+    {value: "verde",
+    writable: false}
+);
+console.log(objeto)
+</textarea>
+                </code>
             </div>
 
             <div class="code_content">
-                <code>
-                    const obj = { <br>
-                        <b>juego: "left 4 dead 2"</b> <br>
-                    } <br>
-                    Object.preventExtensions(obj) <br>
-                    obj.desarrollador =  "valve" <br>
-                </code>
                 <p>
                     con "preventExtensions()" evitaremos que se puedan agregar mas propiedades a un objeto.
                 </p>
+                <code>
+<textarea readonly class="codificacion">
+const obj = {
+    juego: "left 4 dead 2"
+}
+Object.preventExtensions(obj)
+obj.desarrollador =  "valve"
+</textarea>
+                </code>
             </div>
 
             <div class="code_content">
-                <code>
-                    const objeto = { <br>
-                        <b>musica: "adventure",</b> <br>
-                        <b>artista: "Coldplay"</b> <br>
-                    } <br>
-                    delete objeto.artista; <br>
-                    console.log(objeto)
-                </code>
                 <p>
                     con "delete" eliminaremos la propiedad que queramos posdata solo funciona en objetos.
                 </p>
+                <code>
+<textarea readonly class="codificacion">
+const objeto = {                        
+    musica: "adventure",
+    artista: "Coldplay"
+}
+delete objeto.artista;
+console.log(objeto)
+</textarea>
+                </code>
             </div>
+
         </div>
     </main>
 
