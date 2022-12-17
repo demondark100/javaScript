@@ -43,10 +43,8 @@ footer{
 
 
 .img_logo{
-    margin-top: 2px;
-    width: 25px;
-    height: 25px;
-    opacity: 70%;
+    margin-top: -2px;
+    width: 35px;
 }
 .text_logo{
     color: #c8ccf8;
@@ -84,10 +82,12 @@ footer{
 }
 
 .mover{
+    margin-top: -20px;
     background-color: #363636ee;
     margin-left:-45px;
     font-size: 15px;
     transition-duration: .5s;
+    position: relative;
 }
 .mover .li_nav{
     text-align: center;
@@ -117,9 +117,8 @@ p{
         text-align: center;
     }
     .img_logo{
-        margin-top: 6px;
-        width: 40px;
-        height: 40px;
+        margin-top: 1px;
+        width: 60px;
     }
     .text_logo{
         font-size: 20px;
@@ -149,8 +148,8 @@ h2{
     font-size: 20px;
     margin: auto;
     text-align: center;
-    color: #faffc9;
-    background-color: #1c050588;
+    color: #6ce2ff;
+    background-color: #0f1111ea;
     width: 30%;
     min-width: 250px;
     max-width: 400px;
@@ -161,32 +160,58 @@ main{
 }
 
 
-.icono{
+.icono__main{
     margin-left: 50px;
 }
 
-.capitulos_content{
+.cursos_content:nth-child(1){
+    margin-top: 20px;
+}
+.cursos_content{
+    margin-bottom: 20px;
+}
+
+
+
+.capitulos_content_1{
     position: absolute;
-    top: -100%;
+    top: -400%;
+    opacity: 0;
+}
+.capitulos_content_2{
+    position: absolute;
+    top: -400%;
+    opacity: 0;
+}
+.capitulos_content_3{
+    position: absolute;
+    top: -400%;
     opacity: 0;
 }
 
+
+
 .capitulos_content a{
     text-decoration: none;
-    color: #49e6fa;
+    color: #6fb3b6;
     font-size: 18px;
 }
 
 .capitulos_content li{
+    display: block;
+    margin: auto;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+    width: 55%;
+    background-color: #0f1111ea;
 }
 .capitulos_content a:hover{
-    background-color: #4bd9a5;
-    color: #363636;
+    color: #3b989b;
     font-size: 25px;
     transition-duration: .5s;
 }
+
+
 
 .moverOpciones{
     position: relative;
@@ -200,9 +225,8 @@ main{
     list-style: none;
     transition-duration: .5s;
 }
-.javaScript__{
-    margin-top: 120px;
-}
+
+
 
 @media(min-width:850px){
     h2{
@@ -212,8 +236,13 @@ main{
         font-size: 25px;
     }
     .capitulos_content a:hover{
-        background-color: #4bd9a5;
-        color: #363636;
-        font-size: 35px;
+        color: #6fb3b6;
+        font-size: 32px;
     }
+}
+
+
+
+.curso__:nth-child(1){
+    margin-top: 120px;
 }
